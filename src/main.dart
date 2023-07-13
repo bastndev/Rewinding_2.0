@@ -18,7 +18,7 @@ for (int x : array ){
 }
  */
 // TODO:: Practice (DART)
-void main() {
+/* void main() {
   int sum = 0;
   int result = 0;
 
@@ -36,5 +36,41 @@ void main() {
 
   print(result);
 }
+ */
 
-// TODO:Complexity
+// TODO:Complexity (Quicksort)
+void main() {
+  List<int> numbers = [7, 2, 1, 6, 8, 5, 3, 4];
+  quickSort(numbers, 0, numbers.length - 1);
+  print(numbers);
+}
+
+void quickSort(List<int> array, int low, int high) {
+  if (low < high) {
+    int pivotIndex = partition(array, low, high);
+    quickSort(array, low, pivotIndex - 1);
+    quickSort(array, pivotIndex + 1, high);
+  }
+}
+
+int partition(List<int> array, int low, int high) {
+  int pivot = array[high];
+  int i = low - 1;
+
+  for (int j = low; j < high; j++) {
+    if (array[j] <= pivot) {
+      i++;
+      swap(array, i, j);
+    }
+  }
+
+  swap(array, i + 1, high);
+  return i + 1;
+}
+
+void swap(List<int> array, int i, int j) {
+  int temp = array[i];
+  array[i] = array[j];
+  array[j] = temp;
+}
+//TODO: -- --- -- -- -- -- - Complejidad Logaritmica
