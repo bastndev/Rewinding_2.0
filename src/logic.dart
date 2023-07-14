@@ -30,7 +30,7 @@ void main() {
 
 // TODO: practice tomorrow (Big O) Print First Number
 
-void printFirstElement(List<double> numbers) {
+/* void printFirstElement(List<double> numbers) {
   if (numbers.isNotEmpty) {
     print(numbers.last);
   }
@@ -39,7 +39,7 @@ void printFirstElement(List<double> numbers) {
 void main() {
   List<double> myList = [9.1, 2, 3, 4, 5];
   printFirstElement(myList); // Llamada a la función para imprimir el primer elemento
-}
+} */
 
 // TODO: Print Last Number 2 (Big O)
 
@@ -54,5 +54,16 @@ void main() {
   printLastElement(myList); // Llamada a la función para imprimir el último elemento
 }
  */
+// TODO: Probando 
 
+void printLastElement(List<int> numbers) {
+  if (numbers.isNotEmpty) {
+    print(numbers[numbers.length - 1]);
+  }
+}
+void main() {
+  List<int> myList = [1, 2, 3, 4, 5];
+  printLastElement(myList); // Llamada a la función para imprimir el último elemento
+}
 
+// TODO: Practice
