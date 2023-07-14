@@ -55,7 +55,7 @@ void main() {
 }
  */
 // TODO: Probando 
-
+/* 
 void printLastElement(List<int> numbers) {
   if (numbers.isNotEmpty) {
     print(numbers[numbers.length - 1]);
@@ -64,6 +64,27 @@ void printLastElement(List<int> numbers) {
 void main() {
   List<int> myList = [1, 2, 3, 4, 5];
   printLastElement(myList); // Llamada a la función para imprimir el último elemento
+} */
+
+// FIXME: Practice
+/* void main() {
+  final List<int> array = [8, 2, 3, 4, 5];
+  int test(List<int> n) {
+    return n[0];
+  }
+  
+  print(test(array));
+} */
+
+// TODO: Me
+void printLastElement(List<int> numbers){
+  if(numbers.isNotEmpty){
+    print(numbers.last);
+  }
+}
+void main (){
+
+  List<int> myList = [ 1,2,3,4,5,6];
+  printLastElement(myList);
 }
 
-// TODO: Practice
