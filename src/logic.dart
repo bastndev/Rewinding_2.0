@@ -1,5 +1,5 @@
 // Enfoque iterativo para calcular la suma de los elementos de una lista
-int sumIterative(List<int> numbers) {
+/* int sumIterative(List<int> numbers) {
   int sum = 0;
   for (int i = 0; i < numbers.length; i++) {
     sum += numbers[i];
@@ -25,5 +25,34 @@ void main() {
   // Enfoque recursivo
   int sumRec = sumRecursive(numbers, 0);
   print('Sum (Recursive): $sumRec');
+} */
+
+
+// TODO: practice tomorrow (Big O) Print First Number
+
+void printFirstElement(List<double> numbers) {
+  if (numbers.isNotEmpty) {
+    print(numbers.last);
+  }
 }
-// TODO: practice tomorrow (Big O)
+
+void main() {
+  List<double> myList = [9.1, 2, 3, 4, 5];
+  printFirstElement(myList); // Llamada a la función para imprimir el primer elemento
+}
+
+// TODO: Print Last Number 2 (Big O)
+
+/* void printLastElement(List<int> numbers) {
+  if (numbers.isNotEmpty) {
+    print(numbers.last);
+  }
+}
+
+void main() {
+  List<int> myList = [1, 2, 3, 4, 5];
+  printLastElement(myList); // Llamada a la función para imprimir el último elemento
+}
+ */
+
+
