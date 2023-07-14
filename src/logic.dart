@@ -27,7 +27,6 @@ void main() {
   print('Sum (Recursive): $sumRec');
 } */
 
-
 // TODO: practice tomorrow (Big O) Print First Number
 
 /* void printFirstElement(List<double> numbers) {
@@ -54,7 +53,7 @@ void main() {
   printLastElement(myList); // Llamada a la función para imprimir el último elemento
 }
  */
-// TODO: Probando 
+// TODO: Probando
 /* 
 void printLastElement(List<int> numbers) {
   if (numbers.isNotEmpty) {
@@ -77,7 +76,7 @@ void main() {
 } */
 
 // TODO: Me
-void printLastElement(List<int> numbers){
+/* void printLastElement(List<int> numbers){
   if(numbers.isNotEmpty){
     print(numbers.last);
   }
@@ -86,5 +85,19 @@ void main (){
 
   List<int> myList = [ 1,2,3,4,5,6];
   printLastElement(myList);
+} */
+// TODO:
+
+void printElement(List<double> number) {
+  if (number.isNotEmpty) {
+    int middleIndex = number.length ~/2;
+    print(number[middleIndex]);
+  }else{
+    print("Void" );
+  }
 }
 
+void main() {
+  List<double> myList = [1.9, 2.4, 3.4, 4.6, 5.5, 6.6, 9.9];
+  printElement(myList);
+}
