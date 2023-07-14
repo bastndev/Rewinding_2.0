@@ -88,7 +88,7 @@ void main (){
 } */
 // TODO:
 
-void printElement(List<double> number) {
+/* void printElement(List<double> number) {
   if (number.isNotEmpty) {
     int middleIndex = number.length ~/2;
     print(number[middleIndex]);
@@ -100,4 +100,18 @@ void printElement(List<double> number) {
 void main() {
   List<double> myList = [1.9, 2.4, 3.4, 4.6, 5.5, 6.6, 9.9];
   printElement(myList);
+} */
+// FIXME: Big O (1) No recomiendp pero esta ahi 
+void printFirstElement(List<int> numbers) {
+  if (numbers.isNotEmpty) {
+    print(numbers[2]);
+  } else {
+    print("Empty list");
+  }
 }
+
+void main() {
+  List<int> myList = [1, 2, 3, 4, 5];
+  printFirstElement(myList);
+}
+
