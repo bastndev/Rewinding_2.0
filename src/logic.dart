@@ -102,7 +102,8 @@ void main() {
   printElement(myList);
 } */
 // FIXME: Big O (1) No recomiendp pero esta ahi 
-void printFirstElement(List<int> numbers) {
+
+/* void printFirstElement(List<int> numbers) {
   if (numbers.isNotEmpty) {
     print(numbers[2]);
   } else {
@@ -113,5 +114,56 @@ void printFirstElement(List<int> numbers) {
 void main() {
   List<int> myList = [1, 2, 3, 4, 5];
   printFirstElement(myList);
-}
+} */
 
+// TODO: --- --- --- --- -- - Gtp 1
+/* import 'dart:collection';
+
+void main() {
+  // Crear una nueva tabla hash utilizando la clase HashMap
+  HashMap<String, int> tablaHash = new HashMap<String, int>();
+
+  // Agregar elementos a la tabla hash
+  tablaHash['Manzana'] = 10;
+  tablaHash['Naranja'] = 5;
+  tablaHash['Plátano'] = 20;
+
+  // Acceder a los valores en la tabla hash
+  print(tablaHash['Manzana']);  // Imprime: 10
+  print(tablaHash['Naranja']);  // Imprime: 5
+  print(tablaHash['Plátano']);  // Imprime: 20
+
+  // Actualizar el valor de un elemento en la tabla hash
+  tablaHash['Manzana'] = 15;
+
+  // Eliminar un elemento de la tabla hash
+  tablaHash.remove('Naranja');
+
+  // Verificar si un elemento existe en la tabla hash
+  print(tablaHash.containsKey('Manzana'));  // Imprime: true
+  print(tablaHash.containsKey('Naranja'));  // Imprime: false
+
+  // Recorrer la tabla hash
+  tablaHash.forEach((key, value) {
+    print('$key: $value');
+  });
+} */
+
+// TODO: --- -- --- -- -- --- --- GPT 2
+import 'dart:collection';
+
+void main() {
+  // Create new table using hash Map. O(1)
+  HashMap<String, int> tablaHash = new HashMap<String, int>();
+
+  // add elements od the table hash
+  tablaHash['Apple'] = 10;
+  tablaHash['Orange'] = 5;
+  tablaHash['Banana'] = 20;
+  tablaHash['Pear'] = 2;
+
+  // Print the table hash
+  tablaHash.forEach((key, value) {
+    print('$key: $value');
+  });
+}
