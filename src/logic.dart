@@ -152,7 +152,7 @@ void main() {
 // TODO: --- -- --- -- -- --- --- GPT 2
 import 'dart:collection';
 
-void main() {
+/* void main() {
   // Create new table using hash Map. O(1)
   HashMap<String, int> tablaHash = new HashMap<String, int>();
 
@@ -166,4 +166,14 @@ void main() {
   tablaHash.forEach((key, value) {
     print('$key: $value');
   });
+} */
+
+// TODO: Complexity Lineal. O(n)
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  // Recorrer la lista e imprimir cada número
+  for (int numero in numeros) {
+    print(numero);
+  }
 }
