@@ -74,7 +74,7 @@ void swap(List<int> array, int i, int j) {
   array[j] = temp;
 } */
 //TODO: -- --- -- -- -- -- Horas dedicadas al estudio y  horas del curso
-import 'dart:io';
+/* import 'dart:io';
 
 void main() {
   double courseDuration = 0.0;
@@ -87,5 +87,16 @@ void main() {
   int requiredDays = (courseDuration / dailyTimeHours).ceil();
 
   print("The course will take approximately $requiredDays days to complete.");
+} */
+
+// TODO: Si Los caracteres (a b c d) = true, (a a b c d d) = false
+
+void main (){
+
+  String number = "a b c d e";
+
+  print(number);
 }
+
+
 
