@@ -39,7 +39,7 @@ for (int x : array ){
  */
 
 // TODO:Complexity (Quicksort)
-void main() {
+/* void main() {
   List<int> numbers = [7, 2, 1, 6, 8, 5, 3, 4];
   quickSort(numbers, 0, numbers.length - 1);
   print(numbers);
@@ -72,5 +72,20 @@ void swap(List<int> array, int i, int j) {
   int temp = array[i];
   array[i] = array[j];
   array[j] = temp;
+} */
+//TODO: -- --- -- -- -- -- Horas dedicadas al estudio y  horas del curso
+import 'dart:io';
+
+void main() {
+  double courseDuration = 0.0;
+  double dailyTime = 0.0;
+
+  courseDuration = double.parse(stdin.readLineSync()!);
+  dailyTime = double.parse(stdin.readLineSync()!);
+
+  double dailyTimeHours = dailyTime / 60;
+  int requiredDays = (courseDuration / dailyTimeHours).ceil();
+
+  print("The course will take approximately $requiredDays days to complete.");
 }
-//TODO: -- --- -- -- -- -- - Complejidad Logaritmica
+
