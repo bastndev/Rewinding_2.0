@@ -170,10 +170,10 @@ import 'dart:collection';
 
 // TODO: Complexity Lineal. O(n)
 void main() {
-  List<int> numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  // Recorrer la lista e imprimir cada número
-  for (int numero in numeros) {
-    print(numero);
+  // Iterate over the list and print each number
+  for (int number in numbers) {
+    print(number);
   }
 }
