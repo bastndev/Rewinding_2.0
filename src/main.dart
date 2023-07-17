@@ -89,14 +89,26 @@ void main() {
   print("The course will take approximately $requiredDays days to complete.");
 } */
 
+// TODO: DiegoVeloper
+
+/* void main() {
+  bool evaluate(int sum, List<int> values) {
+    final Set<int> complements = Set<int>();
+    for (int i = 0; i < values.length; i++) {
+      final int currentValue = values[i];
+      if (complements.contains(currentValue)) return true;
+      complements.add(sum - currentValue);
+    }
+    return false;
+  }
+
+  bool result = evaluate(8, [1, 2, 3, 4, 5, ]);
+  print(result);
+} */
+
 // TODO: Si Los caracteres (a b c d) = true, (a a b c d d) = false
 
 void main (){
 
-  String number = "a b c d e";
 
-  print(number);
 }
-
-
-
