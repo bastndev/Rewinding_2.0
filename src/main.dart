@@ -122,7 +122,7 @@ void main() {
 } */
 // FIXME: Second example
 
-void main (){
+/* void main (){
 
   List<double> number =[1.5, 2.5, 3.5, 4, 5];
   List<String> country =['Chile', 'Spain', 'UUEE'];
@@ -139,4 +139,15 @@ void main (){
   print(number);
   print('My country is: ${country[4]}');
   print(country.length);
-}
+} */
+// FIXME: lEARGING  Maps
+
+/* void main() {
+  Map<String, dynamic> person = {
+    'name': 'John',
+    'age': 30,
+    'city': 'New York'
+  };
+  print(person); // {name: John, age: 30, city: New York}
+} */
+// FIXME: lEARGING  Map
