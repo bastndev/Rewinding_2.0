@@ -104,12 +104,20 @@ void main() {
 
   bool result = evaluate(8, [1, 2, 3, 4, 5, ]);
   print(result);
-} */
+} *///Si Los caracteres (a b c d) = true, (a a b c d d) = false
 
-// TODO: Si Los caracteres (a b c d) = true, (a a b c d d) = false
+// FIXME: First example
 
-void main (){
+/* void main (){
 
   List<int> numbers = [1, 2, 3, 4, 5];
   print(numbers);
-}
+} */
+// FIXME: Second example
+
+/* void main(){
+
+  List<String> country = ['Peru', 'Mexico', 'Colombia'];
+  print('${country[0]} is Lamtam');
+} */
+// FIXME: Second example
