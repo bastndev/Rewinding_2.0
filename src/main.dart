@@ -121,3 +121,22 @@ void main() {
   print('${country[0]} is Lamtam');
 } */
 // FIXME: Second example
+
+void main (){
+
+  List<double> number =[1.5, 2.5, 3.5, 4, 5];
+  List<String> country =['Chile', 'Spain', 'UUEE'];
+
+  print(number);
+  print('${number[2]} is ${country[0]}');
+
+
+  number.add(200);
+  number.add(10);
+
+  country.addAll(['Argentina', 'Peru']);
+
+  print(number);
+  print('My country is: ${country[4]}');
+  print(country.length);
+}
