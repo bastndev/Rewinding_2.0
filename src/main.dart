@@ -151,3 +151,27 @@ void main() {
   print(person); // {name: John, age: 30, city: New York}
 } */
 // FIXME: lEARGING  Map
+
+void main(){
+
+  String property = 'single';
+  Map<String, dynamic> person = {
+    'name': 'Lucas',
+    'age' : 20,
+    'single': true
+  };
+  print(person ['name']);
+  print(person ['age']);
+  print(person [property]);
+
+  Map<int, String> people = {
+    1:'Lucas',
+    2:'Carlos',
+    9:'Maria',
+  };
+  people.addAll({4:'Liz'});
+
+  print(people);
+  print(people[4]);
+  
+}
