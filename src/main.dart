@@ -277,7 +277,7 @@ void  main(){
 } */
 //FIXME: bigger number 2 (in) = Repetir
 
-void main (){
+/* void main (){
 
   List<int> numbers = [10, 2, 3, 40, 20];
   int max = numbers[0];
@@ -288,5 +288,39 @@ void main (){
     }
   }
   print("The bigger number is: $max");
+} */
+//TODO: Contar la cantidad de vocales en un string
+
+void main() {
+  String text = "Hola, cómo estás?";
+  int vowelCount = 0;
+  String vowels = "aeiouAEIOU";
+
+  for (int i = 0; i < text.length; i++) {
+    if (vowels.contains(text[i])) {
+      vowelCount++;
+    }
+  }
+
+  print("El número de vocales en el texto es: $vowelCount");
 }
-//TODO: bigger number 2 (in) = Repetir
+//FIXME: Exercise
+
+
+
+//TODO:  Invertir un string
+
+/* void main() {
+  String originalText = "Hola";
+  String reversedText = "";
+
+  for (int i = originalText.length - 1; i >= 0; i--) {
+    reversedText += originalText[i];
+  }
+
+  print("Texto original: $originalText");
+  print("Texto invertido: $reversedText");
+} */
+//TODO: Tablas Hash (Mapas):
+//TODO:Ejercicio 1: Contar la frecuencia de cada palabra en un texto
+
