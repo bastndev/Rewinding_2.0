@@ -251,7 +251,7 @@ void  main(){
 } */
 
 //FIXME: Practice sum Hash
-void main (){
+/* void main (){
 
   List<double> decimals = [1.3, 4.4, 8.0];
   double sum = 0.3;
@@ -260,5 +260,18 @@ void main (){
     sum += num;
   }
   print("The subtraction is: ${sum }");
-}
+} */
 
+//TODO: GPT bigger number
+void main() {
+  List<int> numbers = [10, 300, 8, 5, 12];
+  int max = numbers[0];
+
+  for (int num in numbers) {
+    if (num > max) {
+      max = num;
+    }
+  }
+
+  print("The largest number on the list is: $max");
+}
