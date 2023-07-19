@@ -217,7 +217,7 @@ void main() {
 // FIXME: Eres malito
 
 //-- -- - The formula --- --- 
-bool letters(List<String> alphabet) {
+/* bool letters(List<String> alphabet) {
   Set <String> uniqueLetters = Set<String>();
 
   for(String letter in alphabet){
@@ -235,6 +235,19 @@ void  main(){
   List<String> alphabet = ['a','b','c','d','d',];
   bool rpLetters = letters(alphabet);
   print(rpLetters);
-}
+} */
 
-//TODO:
+//TODO: Practice number 2 || 7. Ejercicio 2 - Arrays, Strings y Tablas Hash
+
+/* void main (){
+
+  List <int> numbers = [1, 3, 5, 6, 72,];
+  int sum = 3;
+
+  for (int num in numbers){
+    sum += num;
+  }
+  print("The sum all is: $sum");
+} */
+
+//FIXME: Practice sum Hash
