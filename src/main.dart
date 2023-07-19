@@ -152,7 +152,7 @@ void main() {
 } */
 // FIXME: lEARGING  Map
 
-void main(){
+/* void main(){
 
   String property = 'single';
   Map<String, dynamic> person = {
@@ -174,4 +174,22 @@ void main(){
   print(people);
   print(people[4]);
   
+} */
+
+// TODO: practice again
+
+void main (){
+
+  List<String> names = ['lucas', 'Maria']; 
+  print(names[1]);
+
+  String test = 'Single';
+  Map<String, dynamic> number = {
+    'name' : 'Marcos',
+    'age' : 20,
+    'Single' : true
+  };
+  print("My name is ${number['name']} I have ${number['age']} years old, and I'm Single? ${number[test]}  " );
+  
 }
+//TODO: 
