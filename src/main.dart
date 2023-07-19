@@ -194,7 +194,8 @@ void main() {
 } */
 //TODO: const O(1) || or ||  lineal O(n)
 
-bool hasRepeatedLetters(List<String> alphabet) {
+/* 
+  bool hasRepeatedLetters(List<String> alphabet) {
   Set<String> uniqueLetters = Set<String>();
   
   for (String letter in alphabet) {
@@ -212,5 +213,28 @@ void main() {
   
   bool hasRepeated = hasRepeatedLetters(alphabet);
   print(hasRepeated);
-}
+} */
 // FIXME: Eres malito
+
+//-- -- - The formula --- --- 
+bool letters(List<String> alphabet) {
+  Set <String> uniqueLetters = Set<String>();
+
+  for(String letter in alphabet){
+    if(uniqueLetters.contains(letter)){
+      return false;
+    }
+    uniqueLetters.add(letter);
+  }
+  return true;
+}
+// -- -- -- -- Data -- -- --- --
+
+void  main(){
+
+  List<String> alphabet = ['a','b','c','d','d',];
+  bool rpLetters = letters(alphabet);
+  print(rpLetters);
+}
+
+//TODO:
