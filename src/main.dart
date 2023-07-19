@@ -261,9 +261,9 @@ void  main(){
   }
   print("The subtraction is: ${sum }");
 } */
-
 //TODO: GPT bigger number
-void main() {
+
+/* void main() {
   List<int> numbers = [10, 300, 8, 5, 12];
   int max = numbers[0];
 
@@ -274,4 +274,19 @@ void main() {
   }
 
   print("The largest number on the list is: $max");
+} */
+//FIXME: bigger number 2 (in) = Repetir
+
+void main (){
+
+  List<int> numbers = [10, 2, 3, 40, 20];
+  int max = numbers[0];
+
+  for (int num in numbers){
+    if(num > max){
+      max = num;
+    }
+  }
+  print("The bigger number is: $max");
 }
+//TODO: bigger number 2 (in) = Repetir
