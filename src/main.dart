@@ -251,3 +251,14 @@ void  main(){
 } */
 
 //FIXME: Practice sum Hash
+void main (){
+
+  List<double> decimals = [1.3, 4.4, 8.0];
+  double sum = 0.3;
+
+  for (double num in decimals){
+    sum += num;
+  }
+  print("The subtraction is: ${sum }");
+}
+
