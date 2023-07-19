@@ -178,7 +178,7 @@ void main() {
 
 // TODO: practice again
 
-void main (){
+/* void main (){
 
   List<String> names = ['lucas', 'Maria']; 
   print(names[1]);
@@ -191,5 +191,26 @@ void main (){
   };
   print("My name is ${number['name']} I have ${number['age']} years old, and I'm Single? ${number[test]}  " );
   
+} */
+//TODO: const O(1) || or ||  lineal O(n)
+
+bool hasRepeatedLetters(List<String> alphabet) {
+  Set<String> uniqueLetters = Set<String>();
+  
+  for (String letter in alphabet) {
+    if (uniqueLetters.contains(letter)) {
+      return false;
+    }
+    uniqueLetters.add(letter);
+  }
+  
+  return true;
 }
-//TODO: 
+
+void main() {
+  List<String> alphabet = ['a', 'b', 'c', 'd', 'e'];
+  
+  bool hasRepeated = hasRepeatedLetters(alphabet);
+  print(hasRepeated);
+}
+// FIXME: Eres malito
