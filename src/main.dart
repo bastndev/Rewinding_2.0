@@ -334,7 +334,7 @@ void  main(){
   print("Reverse text: $reversedText");
 } */
 //FIXME:  Reverse text (los datos de originalText, pasa a reverseText)
-
+/* 
 void main (){
 
   String originalText = "Hello";
@@ -345,16 +345,67 @@ void main (){
   }
   print('Reverse text is: $reverseText');
 }
+ */
 
+//TODO: Sum 2 number for target, exercise 1
 
+/* void findPairs(List<int> numbers, int targetSum) {
+  Map<int, int> pairs = {};
 
+  bool foundPair = false;
 
+  for (int i = 0; i < numbers.length; i++) {
+    int complement = targetSum - numbers[i];
+    if (pairs.containsKey(complement)) {
+      print('${numbers[i]} and ${pairs[complement]} added $targetSum');
+      foundPair = true;
+    }
+    pairs[numbers[i]] = numbers[i];
+  }
 
+  if (!foundPair) {
+    print('null');
+  }
+}
 
+void main() {
+  List<int> numbers = [9, 2, 5, 6];
+  int targetSum = 11;
 
+  findPairs(numbers, targetSum);
+} */
 
+// TODO: Sum 2 number for target, exercise 2
+void main() {
+  List<int> nums = [2, 9, 6, 5, 4];
+  int target = 10;
 
+  TwoSum twoSumObj = TwoSum();
+  List<int>? result = twoSumObj.twoSum(nums, target);
 
-//TODO: Tablas Hash (Mapas):
-//TODO:Ejercicio 1: Contar la frecuencia de cada palabra en un texto
+  if (result != null) {
+    int num1 = nums[result[0]];
+    int num2 = nums[result[1]];
+    print("The numbers that add up to the goal are: $num1 and $num2");
+  } else {
+    print("null");
+  }
+}
 
+class TwoSum {
+  List<int>? twoSum(List<int> nums, int target) {
+    if (nums.length < 2)
+      return null;
+
+    Map<int, int> compMap = {};
+
+    for (int i = 0; i < nums.length; i++) {
+      int complement = target - nums[i];
+      if (compMap.containsKey(complement))
+        return [i, compMap[complement]!];
+      compMap[nums[i]] = i;
+    }
+
+    return null;
+  }
+}
