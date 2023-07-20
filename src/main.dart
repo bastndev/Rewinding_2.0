@@ -291,7 +291,7 @@ void  main(){
 } */
 //TODO: Contar la cantidad de vocales en un string
 
-void main() {
+/* void main() {
   String text = "Hola, cómo estás?";
   int vowelCount = 0;
   String vowels = "aeiouAEIOU";
@@ -303,10 +303,22 @@ void main() {
   }
 
   print("El número de vocales en el texto es: $vowelCount");
-}
+} */
 //FIXME: Exercise
 
+/* void main(){
 
+  String text = "Hello world";
+  int vowelCount = 0;
+  String vowels = "aeiouAEIOU";
+
+  for (int i = 0; i < text.length; i++){
+    if(vowels.contains(text[i])){
+      vowelCount++;
+    }
+  }
+  print("The number of vowels in the text is: $vowelCount");
+} */
 
 //TODO:  Invertir un string
 
@@ -321,6 +333,8 @@ void main() {
   print("Texto original: $originalText");
   print("Texto invertido: $reversedText");
 } */
+//FIXME:
+
 //TODO: Tablas Hash (Mapas):
 //TODO:Ejercicio 1: Contar la frecuencia de cada palabra en un texto
 
