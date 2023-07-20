@@ -323,17 +323,37 @@ void  main(){
 //TODO:  Invertir un string
 
 /* void main() {
-  String originalText = "Hola";
+  String originalText = "Whats up";
   String reversedText = "";
 
   for (int i = originalText.length - 1; i >= 0; i--) {
     reversedText += originalText[i];
   }
 
-  print("Texto original: $originalText");
-  print("Texto invertido: $reversedText");
+  print("Original text: $originalText");
+  print("Reverse text: $reversedText");
 } */
-//FIXME:
+//FIXME:  Reverse text (los datos de originalText, pasa a reverseText)
+
+void main (){
+
+  String originalText = "Hello";
+  String reverseText = "";
+
+  for (int i = originalText.length - 1; i >= 0; i--){
+    reverseText += originalText[i];
+  }
+  print('Reverse text is: $reverseText');
+}
+
+
+
+
+
+
+
+
+
 
 //TODO: Tablas Hash (Mapas):
 //TODO:Ejercicio 1: Contar la frecuencia de cada palabra en un texto
