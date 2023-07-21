@@ -104,7 +104,7 @@ void main() {
 
   bool result = evaluate(8, [1, 2, 3, 4, 5, ]);
   print(result);
-} *///Si Los caracteres (a b c d) = true, (a a b c d d) = false
+} */ //Si Los caracteres (a b c d) = true, (a a b c d d) = false
 
 // FIXME: First example
 
@@ -216,7 +216,7 @@ void main() {
 } */
 // FIXME: Eres malito
 
-//-- -- - The formula --- --- 
+//-- -- - The formula --- ---
 /* bool letters(List<String> alphabet) {
   Set <String> uniqueLetters = Set<String>();
 
@@ -437,11 +437,40 @@ class TwoSum {
   print("Hello $melon, Hi $mayorca");
 } */
 
-void main  (){
+/* void main  (){
 
   String change = "Bastian";
 
   int result = change.length; 
 
   print("The result is $result");
+} */
+// FIXME: length || Practice
+
+/* void main (){
+
+  List<double> number = [1.7, 2.4, 3.2, 4.3, 5.1];
+
+  int result = number.length;
+
+  print("These result is: $result"); 
+} */
+
+//FIXME: bool isEmpty
+
+/* void main (){
+
+  List<int> number = [1];
+  
+  bool thisVoid = number.isEmpty;
+
+  print(thisVoid);
+} */
+
+void main() {
+  List<int> number = [1];
+
+  bool thisVoid = number.isNotEmpty;
+
+  print(thisVoid);
 }
