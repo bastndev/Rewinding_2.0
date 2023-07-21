@@ -376,7 +376,7 @@ void main() {
 } */
 
 // TODO: Sum 2 number for target, exercise 2
-void main() {
+/* void main() {
   List<int> nums = [2, 9, 6, 5, 4];
   int target = 10;
 
@@ -408,4 +408,31 @@ class TwoSum {
 
     return null;
   }
+} */
+// TODO: Practice alone || Alone ;
+
+/* void main (){
+
+  String mayer = "Mayer";
+
+  print(mayer);
 }
+ */
+
+/* void main (){
+
+  int num1 = 10;
+  int num2 = 20;
+  
+  int result = num1 + num2;
+
+  print("The result is: $result");
+} */
+
+/* void main (){
+
+  String melon = "melon";
+  String mayorca = "Mayorca";
+
+  print("Hello $melon, Hi $mayorca");
+} */
