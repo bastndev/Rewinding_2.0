@@ -409,7 +409,7 @@ class TwoSum {
     return null;
   }
 } */
-// TODO: Practice alone || Alone ;
+// FIXME: Practice alone || Alone ;
 
 /* void main (){
 
@@ -436,3 +436,12 @@ class TwoSum {
 
   print("Hello $melon, Hi $mayorca");
 } */
+
+void main  (){
+
+  String change = "Bastian";
+
+  int result = change.length; 
+
+  print("The result is $result");
+}
