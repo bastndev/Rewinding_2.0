@@ -467,10 +467,54 @@ class TwoSum {
   print(thisVoid);
 } */
 
-void main() {
+/* void main() {
   List<int> number = [1];
 
   bool thisVoid = number.isNotEmpty;
 
   print(thisVoid);
+}
+ */
+
+//TODO: Diegoveloper
+/* void main() {
+  String getCalories(String fruit) {
+    const map = {
+      'strawberry': '65 calories',
+      'orange': '65 calories',
+      'banana': '65 calories',
+      'apple': '65 calories',
+    };
+  }
+  return map[fruit] ?? 'N/A';
+} */
+
+void main() {
+  print(Fruit.strawberry.calories); // Output: 65 calories
+  print(Fruit.mango.calories);      // Output: 60 calories
+  print(Fruit.banana.calories);     // Output: 89 calories
+  print(Fruit.pear.calories);       // Output: 89 calories
+}
+
+enum Fruit {
+  strawberry,
+  mango,
+  banana,
+  pear,
+}
+
+extension FruitCalories on Fruit {
+  String get calories {
+    switch (this) {
+      case Fruit.strawberry:
+        return '65 calories';
+      case Fruit.mango:
+        return '60 calories';
+      case Fruit.banana:
+      case Fruit.pear:
+        return '89 calories';
+      default:
+        return 'Unknown';
+    }
+  }
 }
