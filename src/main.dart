@@ -489,7 +489,7 @@ class TwoSum {
   return map[fruit] ?? 'N/A';
 } */
 
-void main() {
+/* void main() {
   print(Fruit.strawberry.calories); // Output: 65 calories
   print(Fruit.mango.calories);      // Output: 60 calories
   print(Fruit.banana.calories);     // Output: 89 calories
@@ -517,4 +517,33 @@ extension FruitCalories on Fruit {
         return 'Unknown';
     }
   }
+}
+ */
+
+// TODO: developer D
+void main() {
+  print(getFruitCalories(Fruit.strawberry)); // Output: 65 calories
+  print(getFruitCalories(Fruit.mango));      // Output: 60 calories
+  print(getFruitCalories(Fruit.banana));     // Output: 89 calories
+  print(getFruitCalories(Fruit.pear));       // Output: 89 calories
+  print(getFruitCalories(Fruit.pears));       // Output: 89 calories
+}
+
+enum Fruit {
+  strawberry,
+  mango,
+  banana,
+  pear,
+  pears,
+}
+
+Map<Fruit, String> fruitCalories = {
+  Fruit.strawberry: '65 calories',
+  Fruit.mango: '60 calories',
+  Fruit.banana: '89 calories',
+  Fruit.pear: '19 calories',
+};
+
+String getFruitCalories(Fruit fruit) {
+  return fruitCalories[fruit] ?? 'Unknown';
 }
