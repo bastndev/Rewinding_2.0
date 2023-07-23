@@ -521,7 +521,7 @@ extension FruitCalories on Fruit {
  */
 
 // TODO: developer D
-void main() {
+/* void main() {
   print(getFruitCalories(Fruit.strawberry)); // Output: 65 calories
   print(getFruitCalories(Fruit.mango));      // Output: 60 calories
   print(getFruitCalories(Fruit.banana));     // Output: 89 calories
@@ -546,4 +546,15 @@ Map<Fruit, String> fruitCalories = {
 
 String getFruitCalories(Fruit fruit) {
   return fruitCalories[fruit] ?? 'Unknown';
+} */
+
+//FIXME: EmJoy Practice Melody
+
+void main (){
+
+  List<String> nameLatam = ['Maria', 'Luisa', 'Pedro'];
+
+  List<int> ageLatam = [12, 30, 90];
+
+  print("This girl is called ${nameLatam[0]} her has ${ageLatam[ 2]} ");
 }
