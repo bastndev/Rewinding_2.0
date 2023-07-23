@@ -550,7 +550,7 @@ String getFruitCalories(Fruit fruit) {
 
 //FIXME: EmJoy Practice Melody
 
-void main (){
+/* void main (){
 
   List<String> nameLatam = ['Maria', 'Luisa', 'Pedro'];
 
@@ -558,4 +558,17 @@ void main (){
 
   print("This girl is called ${nameLatam[0]} her has ${ageLatam[ 2]} ");
 }
- 
+  */
+
+//FIXME: Practice number 2
+
+void main(){
+
+  List<String> names =[ 'Pedro', 'Berth', 'Luis' ];
+
+  Map<String, double> que = {
+    'age' : 21,
+    'tall' : 1.50
+  };
+  print("My mane is ${names[0]} and y have ${que['age']} ant, I tall ${que['tall']} ");
+}
