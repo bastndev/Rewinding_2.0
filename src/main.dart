@@ -562,7 +562,7 @@ String getFruitCalories(Fruit fruit) {
 
 //FIXME: Practice number 2
 
-void main(){
+/* void main(){
 
   List<String> names =[ 'Pedro', 'Berth', 'Luis' ];
 
@@ -571,4 +571,20 @@ void main(){
     'tall' : 1.50
   };
   print("My mane is ${names[0]} and y have ${que['age']} ant, I tall ${que['tall']} ");
+}
+ */
+
+//TODO: Gpt best
+void main() {
+  List<String> names = ['Pedro', 'Berth', 'Luis'];
+
+  Map<String, double?> que = {
+    'age': 21,
+    'tall': 1.50
+  };
+
+  String formattedAge = que['age']?.toStringAsFixed(0) ?? 'N/A';
+  String formattedTall = que['tall']?.toStringAsFixed(2) ?? 'N/A';
+
+  print("My name is ${names[0]} and I am $formattedAge years old, I am ${formattedTall} meters tall.");
 }
