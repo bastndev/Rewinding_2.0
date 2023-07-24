@@ -575,7 +575,7 @@ String getFruitCalories(Fruit fruit) {
  */
 
 //TODO: Gpt best
-void main() {
+/* void main() {
   List<String> names = ['Pedro', 'Berth', 'Luis'];
 
   Map<String, double?> que = {
@@ -587,4 +587,47 @@ void main() {
   String formattedTall = que['tall']?.toStringAsFixed(2) ?? 'N/A';
 
   print("My name is ${names[0]} and I am $formattedAge years old, I am ${formattedTall} meters tall.");
+} */
+
+//FIXME: Practice 
+
+/* void main  (){
+
+  String names = "Luisa";
+  String reverseName = "";
+
+  for (int i = names.length -1; i>= 0; i--){
+    reverseName += names[i];
+  }
+  print("Your Name in reverse is: $reverseName ");
+} */
+
+/* void main(){
+
+  String names = "calla mrd";
+  String reverseNIckName = "";
+
+  for (int i = names.length -1; i>= 0; i--){
+    reverseNIckName += names[i];
+  }
+  print("$reverseNIckName");
+} */
+
+void main() {
+  List<String> names = ['Maria', 'Luisa', 'Marcos'];
+
+  for (int i = 0; i < names.length; i++) {
+    if (names[i] == 'Maria') {
+      String reversedName = '';
+
+      for (int j = names[i].length - 1; j >= 0; j--) {
+        reversedName += names[i][j];
+      }
+
+      print("Reversed name: $reversedName");
+    } else {
+      print(names[i]);
+    }
+  }
 }
+
