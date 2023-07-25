@@ -634,7 +634,9 @@ String getFruitCalories(Fruit fruit) {
 // TODO: Email, practice
 void main (){
 
-  
+  String name = "Lucas";
+
+  print("Real name of Maria is $name");
 }
 
 
