@@ -632,11 +632,19 @@ String getFruitCalories(Fruit fruit) {
 } */
 
 // TODO: Email, practice
-void main (){
+/* void main (){
 
   String name = "Lucas";
 
   print("Real name of Maria is $name");
+} */
+
+// FIXME: Practice final  | no swap age or name
+
+void main() {
+  final int age = 30;
+  final String name = "Juan";
+
+  print("Your name is $name nad you have $age");
+
 }
-
-
