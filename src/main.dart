@@ -850,11 +850,11 @@ void greet({required String text ,required String name }) {
 
 //FIXME: String
 void main (){
-  var message =  greet(name:'Lucas', text: 'Hello' );
+  final message =  greet2(name:'Lucas', text: 'Hello' );
   print(message);
 }
 
 String greet({ required String text ,required String name }) {
-
   return "$text $name";
 }
+String greet2({ required String text ,required String name }) => "$text $name";
