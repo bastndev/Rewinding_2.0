@@ -692,7 +692,7 @@ void main() {
 //TODO: Anagramas =  anagrams FIXME: array = List
 
 //TODO: bool Validation
-void main (){
+/* void main (){
 
   bool x = true;
 
@@ -701,4 +701,19 @@ void main (){
   }else( ){
     print("aea tas malito ");
   };
+} */
+
+//FIXME: bool Validation
+
+void main(){
+
+  bool x = true;
+
+  x = !x;
+
+  if(x == true){
+    print("Epale Mi rey");
+  }else{
+    print("aea malito");
+  }
 }
