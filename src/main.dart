@@ -589,7 +589,7 @@ String getFruitCalories(Fruit fruit) {
   print("My name is ${names[0]} and I am $formattedAge years old, I am ${formattedTall} meters tall.");
 } */
 
-//FIXME: Practice 
+//FIXME: Practice
 
 /* void main  (){
 
@@ -640,11 +640,52 @@ String getFruitCalories(Fruit fruit) {
 } */
 
 // FIXME: Practice final  | no swap age or name
-
+/* 
 void main() {
   final int age = 30;
   final String name = "Juan";
 
   print("Your name is $name nad you have $age");
 
+} */
+
+// TODO: O(1) nad O(n)
+/* void main() {
+  int getFirstElements(List<int> numbers) {
+    return numbers[0];
+  }
+}
+
+void imprimirElementos(List<int> numeros) {
+  for (int numero in numeros) {
+    print(numero);
+  }
+}
+ */
+
+//TODO: Anagramas =  anagrams FIXME: array = List
+
+bool areAnagrams(String str1, String str2) {
+  if (str1.length != str2.length) {
+    return false;
+  }
+
+  List<String> chars1 = str1.split('')..sort();
+  List<String> chars2 = str2.split('')..sort();
+
+  String sortedStr1 = chars1.join();
+  String sortedStr2 = chars2.join();
+
+  return sortedStr1 == sortedStr2;
+}
+
+void main() {
+  String word1 = "roma";
+  String word2 = "amor";
+
+  if (areAnagrams(word1, word2)) {
+    print('$word1 y $word2 son anagrams.');
+  } else {
+    print('$word1 y $word2 no son anagrams.');
+  }
 }
