@@ -733,7 +733,7 @@ void main() {
 } */
 //TODO: Anagramas =  anagrams FIXME: array = List
 //TODO: Limites List
-void main(){
+/* void main(){
 
   List<int> number = [1,2,3,4,5];
 
@@ -751,4 +751,17 @@ void main(){
   othersNumbers[5]=6;
 
   print(othersNumbers);
+} */
+
+//TODO: Map Update
+
+void main (){
+
+  Map pokemon = {
+    'color': 'red',
+    'age': '23',
+    'power': 'electric',
+  };
+
+  print("Pikachu is color ${pokemon['color']} they have ${pokemon['age']} years old and is the type ${pokemon['power']} ");
 }
