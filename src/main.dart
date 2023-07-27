@@ -799,4 +799,43 @@ void main() {
 }
  */
 
-//TODO:
+//TODO: Practice GPT
+class Book {
+  String title;
+  String author;
+  String genre;
+
+  Book(this.title, this.author, this.genre);
+}
+
+List<Book> books = [
+  Book("The Great Gatsby", "F. Scott Fitzgerald", "Classic"),
+  Book("To Kill a Mockingbird", "Harper Lee", "Classic"),
+  Book("1984", "George Orwell", "Science Fiction"),
+  Book("The Hunger Games", "Suzanne Collins", "Science Fiction"),
+  Book("The Catcher in the Rye", "J.D. Salinger", "Classic"),
+  Book("The Hobbit", "J.R.R. Tolkien", "Fantasy"),
+];
+
+Map<String, List<Book>> booksByGenre = {}; // Not nullable
+
+void main() {
+  // (Step 2) Create the list of books
+  // (Step 3) Organize books into a Map
+  for (var book in books) {
+    if (!booksByGenre.containsKey(book.genre)) {
+      booksByGenre[book.genre] = [];
+    }
+    booksByGenre[book.genre]?.add(book); // Use the conditional operator (?.) to handle potential null value
+  }
+
+  // (Step 4) Print the results
+  for (var genre in booksByGenre.keys) {
+    print("Genre: $genre");
+    for (var book in booksByGenre[genre]!) { // Add a null check using the non-null assertion operator (!)
+      print("  - ${book.title} by ${book.author}");
+    }
+    print(""); // Add an empty line for separation
+  }
+}
+// FIXME:
