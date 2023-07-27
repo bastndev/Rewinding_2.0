@@ -840,10 +840,9 @@ void main() {
 } */
 // FIXME: Function
 void main (){
-
   greet(name:'Lucas', text: 'Hello' );
 }
 
-void greet({text, name}){
-  print("$text $name" );
+void greet({required String text ,required String name }) {
+  print("$text $name");
 }
