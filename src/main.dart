@@ -841,9 +841,9 @@ void main() {
 // FIXME: Function
 void main (){
 
-  greet();
+  greet(name:'Lucas', text: 'Hello' );
 }
 
-void greet(){
-  print("Hello");
+void greet({text, name}){
+  print("$text $name" );
 }
