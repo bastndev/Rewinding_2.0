@@ -849,7 +849,7 @@ void greet({required String text ,required String name }) {
  */
 
 //FIXME: String
-void main (){
+/* void main (){
   final message =  greet2(name:'Lucas', text: 'Hello' );
   print(message);
 }
@@ -857,4 +857,25 @@ void main (){
 String greet({ required String text ,required String name }) {
   return "$text $name";
 }
-String greet2({ required String text ,required String name }) => "$text $name";
+String greet2({ required String text ,required String name }) => "$text $name"; */
+
+/* void main (){
+  final chapa = names(text: 'Lucas', name: 'Juan');
+  print(chapa);
+
+}
+
+String names ({required text, required name}) => "$text $name"; */
+
+//TODO: Practice
+main() {
+  final chapa = generateNickname(firstName: 'Diego', lastName: 'Juan');
+  print(chapa);
+}
+
+String generateNickname({required firstName, required lastName}) {
+  String nickname = firstName[0] + lastName[0];
+  return nickname;
+}
+
+
