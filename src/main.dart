@@ -665,7 +665,7 @@ void imprimirElementos(List<int> numeros) {
 
 //TODO: Anagramas =  anagrams FIXME: array = List
 
-bool areAnagrams(String str1, String str2) {
+/* bool areAnagrams(String str1, String str2) {
   if (str1.length != str2.length) {
     return false;
   }
@@ -688,4 +688,17 @@ void main() {
   } else {
     print('$word1 y $word2 no son anagrams.');
   }
+} */
+//TODO: Anagramas =  anagrams FIXME: array = List
+
+//TODO: bool Validation
+void main (){
+
+  bool x = true;
+
+  if(x == true){
+    print("Epale mi rey");
+  }else( ){
+    print("aea tas malito ");
+  };
 }
