@@ -839,10 +839,22 @@ void main() {
   }
 } */
 // FIXME: Function
-void main (){
+/* void main (){
   greet(name:'Lucas', text: 'Hello' );
 }
 
 void greet({required String text ,required String name }) {
   print("$text $name");
+}
+ */
+
+//FIXME: String
+void main (){
+  var message =  greet(name:'Lucas', text: 'Hello' );
+  print(message);
+}
+
+String greet({ required String text ,required String name }) {
+
+  return "$text $name";
 }
