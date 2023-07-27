@@ -705,13 +705,28 @@ void main() {
 
 //FIXME: bool Validation
 
-void main(){
+/* void main(){
 
   bool x = true;
 
   x = !x;
 
   if(x == true){
+    print("Epale Mi rey");
+  }else{
+    print("aea malito");
+  }
+} */
+//FIXME: bool Validation
+
+void main(){
+
+  bool x = true;
+
+  // x = !x;
+  print(x);
+  
+  if(!x == true){
     print("Epale Mi rey");
   }else{
     print("aea malito");
