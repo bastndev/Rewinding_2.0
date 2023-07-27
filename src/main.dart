@@ -689,7 +689,6 @@ void main() {
     print('$word1 y $word2 no son anagrams.');
   }
 } */
-//TODO: Anagramas =  anagrams FIXME: array = List
 
 //TODO: bool Validation
 /* void main (){
@@ -719,7 +718,7 @@ void main() {
 } */
 //FIXME: bool Validation
 
-void main(){
+/* void main(){
 
   bool x = true;
 
@@ -731,4 +730,25 @@ void main(){
   }else{
     print("aea malito");
   }
+} */
+//TODO: Anagramas =  anagrams FIXME: array = List
+//TODO: Limites List
+void main(){
+
+  List<int> number = [1,2,3,4,5];
+
+  number.add(10);
+
+  print(number);
+
+  List othersNumbers = List.filled(7, null, growable: false);
+
+  othersNumbers[0]=1;
+  othersNumbers[1]=2;
+  othersNumbers[2]=3;
+  othersNumbers[3]=4;
+  othersNumbers[4]=5;
+  othersNumbers[5]=6;
+
+  print(othersNumbers);
 }
