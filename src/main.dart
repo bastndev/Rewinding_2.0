@@ -838,8 +838,12 @@ void main() {
     print(""); // Add an empty line for separation
   }
 } */
-// FIXME: Maps Squid
+// FIXME: Function
 void main (){
 
+  greet();
+}
 
+void greet(){
+  print("Hello");
 }
