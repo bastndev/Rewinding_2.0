@@ -783,3 +783,20 @@ void main() {
 } */
 
 //FIXME: Maps practice
+/* void main (){
+
+  Map<int, String> coach ={
+    1:'Lucas',
+    2:'Pedro',
+    3:'Merry',
+  };
+  print(coach[1]);
+
+  coach.addAll({
+    4:'Miguel'
+  }); 
+  print(coach[4]);
+}
+ */
+
+//TODO:
