@@ -800,7 +800,7 @@ void main() {
  */
 
 //TODO: Practice GPT
-class Book {
+/* class Book {
   String title;
   String author;
   String genre;
@@ -837,5 +837,9 @@ void main() {
     }
     print(""); // Add an empty line for separation
   }
+} */
+// FIXME: Maps Squid
+void main (){
+
+
 }
-// FIXME:
