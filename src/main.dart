@@ -753,9 +753,9 @@ void main() {
   print(othersNumbers);
 } */
 
-//TODO: Map Update
+//FIXME: Map Update
 
-void main (){
+/* void main (){
 
   Map pokemon = {
     'color': 'red',
@@ -765,3 +765,21 @@ void main (){
 
   print("Pikachu is color ${pokemon['color']} they have ${pokemon['age']} years old and is the type ${pokemon['power']} ");
 }
+ */
+//TODO: Map Update
+
+/* void main (){
+
+  String name = 'name';
+  
+  Map<String, dynamic> pokemon = {
+    'name' :'Pikachu',
+    'life' : 100,
+    'gender': true
+  };
+  print(pokemon[name]);
+  print(pokemon['life']);
+  print(pokemon['gender']);
+} */
+
+//FIXME: Maps practice
