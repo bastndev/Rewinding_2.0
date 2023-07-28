@@ -877,7 +877,7 @@ String generateNickname({required firstName, required lastName}) {
   String nickname = firstName[0] + lastName[0];
   return nickname;
 } */
-//TODO: 
+//TODO:
 /* void main() {
   final chapa = generateNickname(firstName: 'Diego', lastName: 'Juan');
   print(chapa);
@@ -888,11 +888,42 @@ String generateNickname({required firstName, required lastName}) {
   return nickname;
 } */
 
-void main() {
+/* void main() {
   var chapa = generateNickname(firstName: 'Diego', lastName: 'Juan');
   print(chapa);
 }
 
 String generateNickname({required firstName, required lastName}) =>
-    firstName[0] + lastName[0];
+    firstName[0] + lastName[0]; */
 
+//FIXME: Algorithm
+
+/* void main() {
+  var number = numberAdd(firstNumber: 'Lucas', secondNumber: '34');
+  print(number);
+}
+String numberAdd({required firstNumber, required secondNumber}) =>
+    firstNumber[0] + secondNumber[0];
+ */
+/* void main() {
+  final chapa = generateNickname(firstName: 23 , lastName: 89);
+  print(chapa);
+}
+
+int generateNickname({required firstName, required lastName}) {
+  int nickname = firstName[0] + lastName[0];
+  return nickname;
+} */
+
+//I want a code than select 2 number first and sum //TODO: EPALE
+
+void main() {
+  final result = sumFirstDigits(numOne: 24, numTwo: 34);
+  print(result); // Output: 6
+}
+
+int sumFirstDigits({required int numOne, required int numTwo}) {
+  final firstDigitNumOne = int.parse(numOne.toString()[0]);
+  final firstDigitNumTwo = int.parse(numTwo.toString()[0]);
+  return firstDigitNumOne + firstDigitNumTwo;
+}
