@@ -962,7 +962,7 @@ int sumNumber({required numOne, required numTwo}) =>
 
 int getFirst(int number) => int.parse(number.toString()[0]); */
 
-void main() {
+/* void main() {
   final result = sumNumber(numOne: 90, numTwo: 90);
   print(result);
 }
@@ -977,5 +977,47 @@ int sumNumber({required numOne, required numTwo}) {
 
   return getFirstDigit(numOne) * getFirstDigit(numTwo);
 }
+ */
 
+//FIXME: Focus
+/* void main() {
+  final result = sumNumber(numOne: 40, numTwo: 20);
+  print(result);
+}
 
+int sumNumber({required numOne, required numTwo}) =>
+    getFirst(numOne) + getFirst(numTwo);
+
+int getFirst(int number) => int.parse(number.toString()[0]); */
+
+/* void main(){
+
+  final result = sumNumber(numOne: 80, numTwo: 10);
+  print(result);
+}
+
+int sumNumber({numOne, numTwo})=>
+  getFirst(numOne) + getFirst(numTwo);
+
+int getFirst(int number) => int.parse(number.toString()[0]); */
+
+//FIXME: BOOL
+
+bool anaGrams(String word1, String word2) {
+  if (word1.length != word2.length) {
+    return false;
+  }
+
+  List<String> letters1 = word1.split('')..sort();
+  List<String> letters2 = word2.split('')..sort();
+
+  return letters1.join() == letters2.join();
+}
+
+void main() {
+  String word1 = "amsor";
+  String word2 = "roma";
+
+  bool result = anaGrams(word1, word2);
+  print(result); 
+}
