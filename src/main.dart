@@ -868,7 +868,7 @@ String greet2({ required String text ,required String name }) => "$text $name"; 
 String names ({required text, required name}) => "$text $name"; */
 
 //TODO: Practice
-main() {
+/* void main() {
   final chapa = generateNickname(firstName: 'Diego', lastName: 'Juan');
   print(chapa);
 }
@@ -876,6 +876,23 @@ main() {
 String generateNickname({required firstName, required lastName}) {
   String nickname = firstName[0] + lastName[0];
   return nickname;
+} */
+//TODO: 
+/* void main() {
+  final chapa = generateNickname(firstName: 'Diego', lastName: 'Juan');
+  print(chapa);
 }
 
+String generateNickname({required firstName, required lastName}) {
+  String nickname = firstName[0] + lastName[0];
+  return nickname;
+} */
+
+void main() {
+  var chapa = generateNickname(firstName: 'Diego', lastName: 'Juan');
+  print(chapa);
+}
+
+String generateNickname({required firstName, required lastName}) =>
+    firstName[0] + lastName[0];
 
