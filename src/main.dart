@@ -952,7 +952,7 @@ int sumNumber({required numOne, required numTwo}) {
   return getFirst(numOne) + getFirst(numTwo);
 } */
 
-void main() {
+/* void main() {
   final result = sumNumber(numOne: 40, numTwo: 20);
   print(result);
 }
@@ -960,5 +960,22 @@ void main() {
 int sumNumber({required numOne, required numTwo}) =>
     getFirst(numOne) + getFirst(numTwo);
 
-int getFirst(int number) => int.parse(number.toString()[0]);
+int getFirst(int number) => int.parse(number.toString()[0]); */
+
+void main() {
+  final result = sumNumber(numOne: 40, numTwo: 10);
+  print(result);
+}
+
+int sumNumber({required numOne, required numTwo}) {
+  int getFirstDigit(int number) {
+    while (number >= 10) {
+      number ~/= 10;
+    }
+    return number;
+  }
+
+  return getFirstDigit(numOne) + getFirstDigit(numTwo);
+}
+
 
