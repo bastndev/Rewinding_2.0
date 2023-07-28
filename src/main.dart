@@ -917,7 +917,7 @@ int generateNickname({required firstName, required lastName}) {
 
 //I want a code than select 2 number first and sum //TODO: EPALE
 
-void main() {
+/* void main() {
   final result = sumFirstDigits(numOne: 24, numTwo: 34);
   print(result); // Output: 6
 }
@@ -926,4 +926,39 @@ int sumFirstDigits({required int numOne, required int numTwo}) {
   final firstDigitNumOne = int.parse(numOne.toString()[0]);
   final firstDigitNumTwo = int.parse(numTwo.toString()[0]);
   return firstDigitNumOne + firstDigitNumTwo;
+} */
+//TODO: todo ``Final
+/* void main() {
+  final result = sumDigits(numOne: 34, numTwo: 34, numThree:25);
+  print(result); // Output: 6
 }
+
+int sumDigits({required numOne, required numTwo, required numThree}) {
+  int getFirst(int number) => int.parse(number.toString()[0]);
+  
+  return getFirst(numOne) + getFirst(numTwo) + getFirst(numThree);
+} */
+
+//FIXME: todo ``Final | Return
+/* void main() {
+  final result = sumNumber(numOne: 40, numTwo: 40);
+  print(result);
+}
+
+int sumNumber({required numOne, required numTwo}) {
+  // GetFirst convierte a cadena de texto || int.parse convierte a entero
+  int getFirst(int number) => int.parse(number.toString()[0]);
+
+  return getFirst(numOne) + getFirst(numTwo);
+} */
+
+void main() {
+  final result = sumNumber(numOne: 40, numTwo: 20);
+  print(result);
+}
+
+int sumNumber({required numOne, required numTwo}) =>
+    getFirst(numOne) + getFirst(numTwo);
+
+int getFirst(int number) => int.parse(number.toString()[0]);
+
