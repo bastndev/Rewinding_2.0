@@ -1001,9 +1001,8 @@ int sumNumber({numOne, numTwo})=>
 
 int getFirst(int number) => int.parse(number.toString()[0]); */
 
-//FIXME: BOOL
 
-bool anaGrams(String word1, String word2) {
+/* bool anaGrams(String word1, String word2) {
   if (word1.length != word2.length) {
     return false;
   }
@@ -1012,12 +1011,41 @@ bool anaGrams(String word1, String word2) {
   List<String> letters2 = word2.split('')..sort();
 
   return letters1.join() == letters2.join();
+
+
 }
 
 void main() {
-  String word1 = "amsor";
+  String word1 = "amor";
   String word2 = "roma";
 
   bool result = anaGrams(word1, word2);
   print(result); 
+}
+ */
+void main() {
+  // Create an empty hash table
+  Map<String, int> hashTable = {};
+
+  // Add elements to the hash table
+  hashTable['apple'] = 1;
+  hashTable['orange'] = 5;
+  hashTable['banana'] = 2;
+
+  // Access a value using a key
+  print(hashTable['apple']); // Output: 3
+
+  // Check if a key exists in the hash table
+  if (hashTable.containsKey('orange')) {
+    print('The key "orange" exists in the hash table.');
+  }
+
+  // Remove an element from the hash table
+  hashTable.remove('banana');
+
+  // Iterate over all elements in the hash table
+  for (var key in hashTable.keys) {
+    var value = hashTable[key];
+    print('$key: $value');
+  }
 }
