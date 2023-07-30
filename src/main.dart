@@ -1023,7 +1023,7 @@ void main() {
   print(result); 
 }
  */
-void main() {
+/* void main() {
   // Create an empty hash table
   Map<String, int> hashTable = {};
 
@@ -1048,4 +1048,12 @@ void main() {
     var value = hashTable[key];
     print('$key: $value');
   }
+}
+ */
+
+//FIXME: Practice and more practice :)
+
+void main (){
+
+
 }
