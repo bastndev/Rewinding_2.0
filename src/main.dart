@@ -1001,7 +1001,6 @@ int sumNumber({numOne, numTwo})=>
 
 int getFirst(int number) => int.parse(number.toString()[0]); */
 
-
 /* bool anaGrams(String word1, String word2) {
   if (word1.length != word2.length) {
     return false;
@@ -1053,7 +1052,50 @@ void main() {
 
 //FIXME: Practice and more practice :)
 
-void main (){
+void setZeros(List<List<int>> matrix) {
+  int rows = matrix.length;
+  int cols = matrix[0].length;
 
+  List<bool> shouldConvertRow = List.filled(rows, false);
+  List<bool> shouldConvertCol = List.filled(cols, false);
 
+  for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
+      if (matrix[i][j] == 0) {
+        shouldConvertRow[i] = true;
+        shouldConvertCol[j] = true;
+      }
+    }
+  }
+
+  for (int i = 0; i < rows; i++) {
+    if (shouldConvertRow[i]) {
+      for (int j = 0; j < cols; j++) {
+        matrix[i][j] = 0;
+      }
+    }
+  }
+
+  for (int j = 0; j < cols; j++) {
+    if (shouldConvertCol[j]) {
+      for (int i = 0; i < rows; i++) {
+        matrix[i][j] = 0;
+      }
+    }
+  }
+}
+
+void main() {
+  List<List<int>> matrix = [
+    [1, 4, 2, 0, 2],
+    [4, 1, 6, 2, 5],
+    [2, 0, 9, 4, 2],
+    [8, 1, 4, 9, 1]
+  ];
+
+  setZeros(matrix);
+
+  for (var row in matrix) {
+    print(row);
+  }
 }
