@@ -1142,11 +1142,11 @@ void main() {
 //TODO: Class pero NO de Fundamento de programacion
 
 void main (){
-  var pikachu =  Pokemon();
-  var charizard = new Pokemon();
+  final pikachu =  Pokemon(type: 'Electric',name: 'Pikachu' );
 
   print(pikachu);
-  print(charizard);
+  // print(pikachu.name);
+  // print(pikachu.type);
 
 }
 
@@ -1154,5 +1154,14 @@ class Pokemon{
 
   late String name;
   late String type;
+
+  Pokemon({required String name,required String type}){
+    this.name = name;
+    this.type = type;
+  }
+
+  String toString(){
+    return 'name: ${this.name} - type ${this.type}'; 
+  }
 }
 
