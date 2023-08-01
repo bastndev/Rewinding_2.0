@@ -1050,9 +1050,9 @@ void main() {
 }
  */
 
-//FIXME: Practice and more practice :)
+//TODO: Matrix
 
-void setZeros(List<List<int>> matrix) {
+/* void setZeros(List<List<int>> matrix) {
   int rows = matrix.length;
   int cols = matrix[0].length;
 
@@ -1099,3 +1099,45 @@ void main() {
     print(row);
   }
 }
+ */
+
+//FIXME: Practice and more practice matrix :) F : C
+
+/* void main() {
+  List<List<int>> matrix1 = [
+    [1, 2],
+    [3, 4],
+  ];
+
+  List<List<int>> matrix2 = [
+    [5, 6],
+    [7, 8],
+  ];
+
+  List<List<int>> resultMatrix = [
+    [0, 0],
+    [0, 0],
+  ];
+
+  resultMatrix[0][0] = matrix1[0][0] + matrix2[0][0];
+  resultMatrix[0][1] = matrix1[0][1] + matrix2[0][1];
+  resultMatrix[1][0] = matrix1[1][0] + matrix2[1][0];
+  resultMatrix[1][1] = matrix1[1][1] + matrix2[1][1];
+
+  for (var row in resultMatrix) {
+    print(row);
+  }
+} */
+//FIXME: Practice and more practice matrix :) F : C
+
+
+/* void main (){
+
+  final moreNumber = List.generate(10, (int index) => index);
+
+  print(moreNumber);
+}
+ */
+
+//TODO: Practice and more practice matrix :) F : C
+
