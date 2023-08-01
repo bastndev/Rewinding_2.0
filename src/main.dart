@@ -1139,5 +1139,20 @@ void main() {
 }
  */
 
-//TODO: Practice and more practice matrix :) F : C
+//TODO: Class pero NO de Fundamento de programacion
+
+void main (){
+  var pikachu =  Pokemon();
+  var charizard = new Pokemon();
+
+  print(pikachu);
+  print(charizard);
+
+}
+
+class Pokemon{
+
+  late String name;
+  late String type;
+}
 
