@@ -1142,7 +1142,7 @@ void main() {
 //TODO: Class pero NO de Fundamento de programacion
 
 void main (){
-  final pikachu =  Pokemon(type: 'Electric',name: 'Pikachu' );
+  final pikachu =  Pokemon(type: 'Electric');
 
   print(pikachu);
   // print(pikachu.name);
@@ -1155,7 +1155,7 @@ class Pokemon{
   late String name;
   late String type;
 
-  Pokemon({required String name,required String type}){
+  Pokemon({ String name = 'NO name',required String type}){
     this.name = name;
     this.type = type;
   }
