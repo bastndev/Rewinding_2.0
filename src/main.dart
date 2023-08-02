@@ -1130,7 +1130,6 @@ void main() {
 } */
 //FIXME: Practice and more practice matrix :) F : C
 
-
 /* void main (){
 
   final moreNumber = List.generate(10, (int index) => index);
@@ -1167,23 +1166,19 @@ class Pokemon{
  */
 
 // TODO: class LAvaDeveloper
-void main (){
-  final pikachu =  Pokemon(type: 'Electric',name: 'Pikachu');
+void main() {
+  final pikachu = Pokemon(type: 'Electric', name: 'Pikachu');
 
   print(pikachu);
   // print(pikachu.name);
   // print(pikachu.type);
-
 }
 
-class Pokemon{
-
+class Pokemon {
   late String name;
   late String type;
 
-  Pokemon({required this.name,required this.type});
+  Pokemon({required this.name, required this.type});
 
-  String toString(){
-    return 'name: $name - type $type'; 
-  }
+  String toString() => 'name: $name - type $type';
 }
