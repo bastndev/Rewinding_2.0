@@ -1234,3 +1234,17 @@ int Add(int num1, int num2)=> num1 * num2; */
 } */
 
 // FIXME: practice Return
+
+void main(){
+  int result = Add(4,3);
+
+  print(result);
+  print(result + result);
+}
+int Add(int num1, int num2){
+
+  print("print 1");
+
+  return num1 * num2;
+  
+}
