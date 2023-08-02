@@ -1220,5 +1220,16 @@ void main() {
 // }
 // int Add(int num1, int num2)=> num1 + num2;
 
+void main() {
+  var add = (int num1, int num2) => num1 + num2;
 
+  int result = add(10, 10);
+  print(result); 
+
+  int result2 = add(5, 5);
+  print(result2);
+
+  int result3 = add(2, 3);
+  print(result3);
+}
 
