@@ -1212,15 +1212,15 @@ void main() {
 
 // FIXME:  Arrow Function | Return
 
-// void main(){
-//   int result = Add(10,10);
+/* void main(){
+  int result = Add(4,3);
 
-//   print(result);
-//   print(result+result);
-// }
-// int Add(int num1, int num2)=> num1 + num2;
+  print(result);
+  print(result + result);
+}
+int Add(int num1, int num2)=> num1 * num2; */
 
-void main() {
+/* void main() {
   var add = (int num1, int num2) => num1 + num2;
 
   int result = add(10, 10);
@@ -1231,5 +1231,6 @@ void main() {
 
   int result3 = add(2, 3);
   print(result3);
-}
+} */
 
+// FIXME: practice Return
