@@ -1141,7 +1141,7 @@ void main() {
 
 //TODO: Class pero NO de Fundamento de programacion
 
-void main (){
+/* void main (){
   final pikachu =  Pokemon(type: 'Electric');
 
   print(pikachu);
@@ -1164,4 +1164,26 @@ class Pokemon{
     return 'name: ${this.name} - type ${this.type}'; 
   }
 }
+ */
 
+// TODO: class LAvaDeveloper
+void main (){
+  final pikachu =  Pokemon(type: 'Electric',name: 'Pikachu');
+
+  print(pikachu);
+  // print(pikachu.name);
+  // print(pikachu.type);
+
+}
+
+class Pokemon{
+
+  late String name;
+  late String type;
+
+  Pokemon({required this.name,required this.type});
+
+  String toString(){
+    return 'name: $name - type $type'; 
+  }
+}
