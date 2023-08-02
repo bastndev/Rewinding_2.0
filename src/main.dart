@@ -1166,7 +1166,7 @@ class Pokemon{
  */
 
 // TODO: class LAvaDeveloper
-void main() {
+/* void main() {
   final pikachu = Pokemon(type: 'Electric', name: 'Pikachu');
 
   print(pikachu);
@@ -1181,4 +1181,32 @@ class Pokemon {
   Pokemon({required this.name, required this.type});
 
   String toString() => 'name: $name - type $type';
-}
+} */
+// FIXME: return and  =>
+
+// Basic Calculator using Arrow Functions with Integers
+/* int calculator(int num1, int num2, String operator) => operator == '+'
+    ? num1 + num2
+    : operator == '-'
+        ? num1 - num2
+        : operator == '*'
+            ? num1 * num2
+            : operator == '/'
+                ? num2 != 0
+                    ? num1 ~/ num2 // Use ~/ for integer division
+                    : throw ArgumentError("Cannot divide by zero.")
+                : throw ArgumentError("Invalid operator: $operator");
+
+void main() {
+  int num1 = 5;
+  int num2 = 3;
+  String operator = '+';
+  
+  try {
+    int result = calculator(num1, num2, operator);
+    print('The result of the operation is: $result');
+  } catch (e) {
+    print('Error: $e');
+  }
+} */
+
