@@ -1235,7 +1235,7 @@ int Add(int num1, int num2)=> num1 * num2; */
 
 // FIXME: practice Return
 
-void main(){
+/* void main(){
   int result = Add(4,3);
 
   print(result);
@@ -1247,4 +1247,17 @@ int Add(int num1, int num2){
 
   return num1 * num2;
   
+} */
+
+//FIXME: Practice Arrow Function and return
+
+void main() {
+  int result = Add(4, 8);
+
+  print(result);
+  print(result * result);
+}
+
+int Add(int num1, int num2) {
+  return num1 + num2;
 }
