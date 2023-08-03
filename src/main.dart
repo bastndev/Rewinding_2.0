@@ -1263,7 +1263,7 @@ int Add(int num1, int num2) {
 }
  */
 // TODO: Empoy and API  FIXME: API / SERVIDOR CONSUMIR TODO: Json
-import 'dart:convert';
+/* import 'dart:convert';
 // import 'dart:html';
 
 void main() {
@@ -1291,11 +1291,12 @@ class Pokemon {
     type = parsedJson['type'];
   }
 }
+ */
 
-/* import 'dart:convert';
+import 'dart:convert';
 
 void main() {
-  final rawJson = '{"name" : "Pikachu", "type" : "Electric"}';
+  final rawJson = '{"name" : "Pikachu", "power" : "Electric"}';
   final parsedJson = json.decode(rawJson);
   final pikachu = new Pokemon.fromJson(parsedJson);
 
@@ -1311,7 +1312,6 @@ class Pokemon {
 
   Pokemon.fromJson(Map parsedJson) {
     name = parsedJson['name'];
-    type = parsedJson['type'];
+    type = parsedJson['power'];
   }
 }
- */
