@@ -1263,17 +1263,55 @@ int Add(int num1, int num2) {
 }
  */
 // TODO: Empoy and API  FIXME: API / SERVIDOR CONSUMIR TODO: Json
-void main (){
-  
-  final charmander = new Pokemon('Charmander', 'Fire'); 
+import 'dart:convert';
+// import 'dart:html';
 
-  print(charmander.name);
-  print(charmander.type);
+void main() {
+  // final charmander = new Pokemon('Charmander', 'Fire');
+
+  final rawJson = '{"name" : "Pikachu", "type" : "Electric"}';
+  final parsedJson = json.decode(rawJson);
+
+  final pikachu = new Pokemon.fromJson(parsedJson);
+
+  print(pikachu.name);
+  print(pikachu.type);
+
+  // print(parsedJson['power']);
 }
-class Pokemon {
 
-  String name;
-  String type;
+class Pokemon {
+  late String name;
+  late String type;
 
   Pokemon(this.name, this.type);
+
+  Pokemon.fromJson(Map parsedJson) {
+    name = parsedJson['name'];
+    type = parsedJson['type'];
+  }
 }
+
+/* import 'dart:convert';
+
+void main() {
+  final rawJson = '{"name" : "Pikachu", "type" : "Electric"}';
+  final parsedJson = json.decode(rawJson);
+  final pikachu = new Pokemon.fromJson(parsedJson);
+
+  print(pikachu.name);
+  print(pikachu.type);
+}
+
+class Pokemon {
+  late String name;
+  late String type;
+
+  Pokemon(this.name, this.type);
+
+  Pokemon.fromJson(Map parsedJson) {
+    name = parsedJson['name'];
+    type = parsedJson['type'];
+  }
+}
+ */
