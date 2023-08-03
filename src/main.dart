@@ -1251,7 +1251,7 @@ int Add(int num1, int num2){
 
 //FIXME: Practice Arrow Function and return
 
-void main() {
+/* void main() {
   int result = Add(4, 8);
 
   print(result);
@@ -1260,4 +1260,20 @@ void main() {
 
 int Add(int num1, int num2) {
   return num1 + num2;
+}
+ */
+// TODO: Empoy and API  FIXME: API / SERVIDOR CONSUMIR TODO: Json
+void main (){
+  
+  final charmander = new Pokemon('Charmander', 'Fire'); 
+
+  print(charmander.name);
+  print(charmander.type);
+}
+class Pokemon {
+
+  String name;
+  String type;
+
+  Pokemon(this.name, this.type);
 }
