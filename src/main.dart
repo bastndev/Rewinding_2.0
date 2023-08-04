@@ -1331,10 +1331,15 @@ String greet(String text, String name) {
   return '$text $name';
 } */
 
-  void main() {
-    final result = greet(name: "Lucas", text: "Hello");
+/*   void main() {
+    final result = greet(name: 23, text: "Hello");
     print(result);
   }
 
   // Funcion return Void = nada
-  String greet({required String text, required String name}) => '$text $name';
+  String greet({required String text,required int  name}){
+    return '$text $name';
+  }
+ */
+
+//TODO: Practice More Practice
