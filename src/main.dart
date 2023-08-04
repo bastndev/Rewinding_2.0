@@ -1320,10 +1320,9 @@ class Pokemon {
 //TODO: Funciones = Functions
 
 void main() {
-  greet(name: "Juan",text: "Hello");
+  final result = greet(name: "Juan", text: "Hello");
+  print(result);
 }
 
 // Funcion return Void = nada
-void greet({required String text,required String name}) {
-  print('$text $name');
-}
+String greet({required String text, required String name}) => '$text $name';
