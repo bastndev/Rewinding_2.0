@@ -1320,10 +1320,10 @@ class Pokemon {
 //TODO: Funciones = Functions
 
 void main() {
-  greet();
+  greet("Hello","Llama");
 }
 
 // Funcion return Void = nada
-void greet() {
-  print("Hello ");
+void greet(text, name) {
+  print('$text $name');
 }
