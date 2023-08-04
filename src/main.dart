@@ -1292,7 +1292,7 @@ class Pokemon {
   }
 }
  */
-
+/* 
 import 'dart:convert';
 
 void main() {
@@ -1314,4 +1314,16 @@ class Pokemon {
     name = parsedJson['name'];
     type = parsedJson['power'];
   }
+}
+ */
+
+//TODO: Funciones = Functions
+
+void main() {
+  greet();
+}
+
+// Funcion return Void = nada
+void greet() {
+  print("Hello ");
 }
