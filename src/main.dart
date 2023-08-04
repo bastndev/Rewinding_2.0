@@ -1319,10 +1319,22 @@ class Pokemon {
 
 //TODO: Funciones = Functions
 
-void main() {
-  final result = greet(name: "Juan", text: "Hello");
+/* void main() async {
+  final result = greet("Hello", "Lucas");
   print(result);
 }
 
-// Funcion return Void = nada
-String greet({required String text, required String name}) => '$text $name';
+String greet(String text, String name) {
+  if (text.isEmpty || name.isEmpty) {
+    throw ArgumentError("Los argumentos no pueden estar vacíos.");
+  }
+  return '$text $name';
+} */
+
+  void main() {
+    final result = greet(name: "Lucas", text: "Hello");
+    print(result);
+  }
+
+  // Funcion return Void = nada
+  String greet({required String text, required String name}) => '$text $name';
