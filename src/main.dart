@@ -1343,3 +1343,107 @@ String greet(String text, String name) {
  */
 
 //TODO: Practice More Practice
+
+/* class Node {
+  int data;
+  Node? next;
+
+  Node(this.data, [this.next]);
+}
+
+class LinkedList {
+  Node? head;
+
+  void add(int data) {
+    if (head == null) {
+      head = Node(data);
+    } else {
+      Node current = head!;
+      while (current.next != null) {
+        current = current.next!;
+      }
+      current.next = Node(data);
+    }
+  }
+
+  void printList() {
+    Node? current = head;
+    while (current != null) {
+      print(current.data);
+      current = current.next;
+    }
+  }
+}
+
+void main() {
+  LinkedList list = LinkedList();
+  list.add(30);
+  list.add(1);
+  list.add(2);
+  list.add(30);
+  list.add(30);
+  list.add(30);
+  list.printList(); // Output: 1 2 3
+}
+
+ */
+//TODO: practice GPT
+class Node {
+  int data;
+  Node? next;
+
+  Node(this.data, [this.next]);
+}
+
+class LinkedList {
+  Node? head;
+
+  void add(int data) {
+    if (head == null) {
+      head = Node(data);
+    } else {
+      Node current = head!;
+      while (current.next != null) {
+        current = current.next!;
+      }
+      current.next = Node(data);
+    }
+  }
+
+  void remove(int data) {
+    if (head == null) return;
+
+    if (head!.data == data) {
+      head = head!.next;
+      return;
+    }
+
+    Node current = head!;
+    while (current.next != null) {
+      if (current.next!.data == data) {
+        current.next = current.next!.next;
+        return;
+      }
+      current = current.next!;
+    }
+  }
+
+  void printList() {
+    Node? current = head;
+    while (current != null) {
+      print(current.data);
+      current = current.next;
+    }
+  }
+}
+
+void main() {
+  LinkedList list = LinkedList();
+  list.add(1);
+  list.add(2);
+  list.add(3);
+  list.printList(); // Output: 1 2 3
+
+  list.remove(2);
+  list.printList(); // Output: 1 3
+}
