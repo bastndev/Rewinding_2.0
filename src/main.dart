@@ -1388,7 +1388,7 @@ void main() {
 
  */
 //TODO: practice GPT
-class Node {
+/* class Node {
   int data;
   Node? next;
 
@@ -1447,3 +1447,6 @@ void main() {
   list.remove(2);
   list.printList(); // Output: 1 3
 }
+ */
+
+// --- -- -- - - TODO: Practice  new 
