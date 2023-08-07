@@ -1449,4 +1449,10 @@ void main() {
 }
  */
 
-// --- -- -- - - TODO: Practice  new 
+// --- -- -- - - TODO: Practice  new Null
+
+bool isEmpty (String change ) => change.length == 0;
+
+void main(){
+  print(isEmpty('Hello'));
+}
