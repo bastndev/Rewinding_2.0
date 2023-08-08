@@ -1525,7 +1525,7 @@ void main() {
 
 //FIXME: Update class | 3.-0 
 
-class Player{
+/* class Player{
   String name;
   int age;
 
@@ -1539,4 +1539,23 @@ class Player{
 void main(){
   Player player1 = Player("Luis", 34);
   player1.sayHello();
+} */
+
+//TODO: Practice class 4.-0
+
+class Book {
+  String title;
+  String author;
+  int pages;
+
+  Book(this.title, this.author, this.pages);
+
+  void showDetails() {
+    print("Title: $title\nAuthor: $author\nPages: $pages");
+  }
+}
+
+void main() {
+  Book book1 = Book("The Great Gatsby", "F. Scott Fitzgerald", 180);
+  book1.showDetails();
 }
