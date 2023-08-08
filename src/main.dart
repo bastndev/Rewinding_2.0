@@ -1506,7 +1506,7 @@ void main(){
 } */
 
 // FIXME: Update class | 2.1
-class Car {
+/* class Car {
   int speed;
   String brand;
 
@@ -1521,4 +1521,22 @@ void main() {
   Car car1 = Car("Suzuki", 5);
 
   car1.sayMake();
+} */
+
+//FIXME: Update class | 3.-0 
+
+class Player{
+  String name;
+  int age;
+
+  Player(this.name, this.age);
+  
+  void sayHello(){
+    print("Hello, my name is $name and I'm $age years old.");
+  }
+} 
+
+void main(){
+  Player player1 = Player("Luis", 34);
+  player1.sayHello();
 }
