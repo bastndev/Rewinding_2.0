@@ -1599,4 +1599,22 @@ void main() {
   print("The area of the rectangle is $area square units.");
 } */
 
+
 //FIXME: Class 5.0
+
+class CalculateSum{
+  int num1;
+  int num2;
+  
+  CalculateSum(this.num1, this.num2);
+
+  int sumNumber(){
+    return num1 + num2;
+  }
+}
+
+void main(){
+  CalculateSum sum1 = CalculateSum(11, 10);
+  int sum = sum1.sumNumber();
+  print("The sum is: $sum");
+}
