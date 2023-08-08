@@ -1463,7 +1463,6 @@ void main (){
   print(age);
 } */
 
-
 // TODO: Listas Enlazadas | Class
 
 class Person {
@@ -1481,6 +1480,6 @@ void main() {
   Person person1 = Person("Alice", 30);
   Person person2 = Person("Bob", 25);
 
-  person1.sayHello(); 
+  person1.sayHello();
   person2.sayHello();
 }
