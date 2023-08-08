@@ -1449,10 +1449,38 @@ void main() {
 }
  */
 
-// --- -- -- - - TODO: Practice  new Null
+// --- -- -- - - FIXME: Practice  new Null
 
-bool isEmpty (String change ) => change.length == 0;
+/* bool isEmpty (String change ) => change.length == 0;
 
 void main(){
   print(isEmpty('Hello'));
+} */
+/* 
+void main (){
+  int? age;
+
+  print(age);
+} */
+
+
+// TODO: Listas Enlazadas | Class
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  void sayHello() {
+    print("Hello, my name is $name and I am $age years old.");
+  }
+}
+
+void main() {
+  Person person1 = Person("Alice", 30);
+  Person person2 = Person("Bob", 25);
+
+  person1.sayHello(); 
+  person2.sayHello();
 }
