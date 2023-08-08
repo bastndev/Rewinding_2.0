@@ -1580,3 +1580,23 @@ void main(){
 
   book1.showPls();
 } */
+
+//TODO: GPT3 
+/* class Rectangle {
+  double width;
+  double height;
+
+  Rectangle(this.width, this.height);
+
+  double calculateArea() {
+    return width * height;
+  }
+}
+
+void main() {
+  Rectangle rectangle1 = Rectangle(5.0, 3.0);
+  double area = rectangle1.calculateArea();
+  print("The area of the rectangle is $area square units.");
+} */
+
+//FIXME: Class 5.0
