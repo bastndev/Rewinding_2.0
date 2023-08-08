@@ -1543,7 +1543,7 @@ void main(){
 
 //TODO: Practice class 4.-0
 
-class Book {
+/* class Book {
   String title;
   String author;
   int pages;
@@ -1558,4 +1558,25 @@ class Book {
 void main() {
   Book book1 = Book("The Great Gatsby", "F. Scott Fitzgerald", 180);
   book1.showDetails();
+} */
+
+//FIXME: Practice class 4.-1 | Pareto 80/20 
+
+/* class Book{
+  String book;
+  String author;
+  int pages;
+
+  Book(this.book, this.author, this.pages);
+
+  void showPls(){
+    print("Title : $book\nAuthor: $author\nPages : $pages ");
+  }
 }
+
+void main(){
+
+  Book book1 = Book("Hupetter", "Luisa", 552);
+
+  book1.showPls();
+} */
