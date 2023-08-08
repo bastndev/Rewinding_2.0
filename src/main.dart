@@ -1465,7 +1465,7 @@ void main (){
 
 // TODO: Listas Enlazadas | Class
 
-class Person {
+/* class Person {
   String name;
   int age;
 
@@ -1482,4 +1482,25 @@ void main() {
 
   person1.sayHello();
   person2.sayHello();
+} */
+
+// FIXME: Practice | class 2.0
+
+class Person{
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+  
+  void sayHello(){
+    print("Hello, my name is $name and I am $age years old.");
+  }
+}
+
+void main(){
+  Person person1 = Person("Alicia", 23);
+  // Person person2 = Person("Juan", 30);
+
+  person1.sayHello();
+  // person2.sayHello();
 }
