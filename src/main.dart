@@ -1602,7 +1602,7 @@ void main() {
 
 //FIXME: Class 5.0
 
-class CalculateSum{
+/* class CalculateSum{
   int num1;
   int num2;
   
@@ -1618,3 +1618,60 @@ void main(){
   int sum = sum1.sumNumber();
   print("The sum is: $sum");
 }
+ */
+
+//TODO: class 5.-0
+
+/* class Dog {
+  String name;
+  String breed;
+
+  Dog(this.name, this.breed);
+
+  void bark() {
+    print("$name, a $breed dog, is barking!");
+  }
+}
+
+void main() {
+  Dog dog1 = Dog("Buddy", "Golden Retriever");
+  dog1.bark();
+}   */
+
+//FIXME: Practice class
+/* 
+class CalculateSum{
+  int num1;
+  int num2;
+  
+  CalculateSum(this.num1, this.num2);
+
+  int sumNumber(){
+    return num1 + num2;
+  }
+}
+
+void main(){
+  CalculateSum sum1 = CalculateSum(11, 10);
+  int sum = sum1.sumNumber();
+  print("The sum is: $sum");
+} */
+
+//FIXME: Update readme.md | Class
+
+class SumNumber{
+  int num1;
+  int num2;
+
+  SumNumber(this.num1, this.num2);
+
+  int sum()=> num1 + num2;
+}
+
+void main(){
+  SumNumber sum1 = SumNumber(10, 5);
+  int suma = sum1.sum();
+  print("the sum is: $suma");
+}
+
+// FIXME: Update Readme.md | Class
