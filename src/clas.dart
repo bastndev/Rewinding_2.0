@@ -67,7 +67,7 @@ void main (){
 } */
 
 // TODO:  F H
-class Hero{
+/* class Hero{
   String power;
   String name;
 
@@ -77,9 +77,36 @@ class Hero{
     return 'Hero:\nname:${this.name}\nPower:${this.power}';
   }
 }
-
 void main (){
 
-  final wolverine = new Hero(name:"Logan", power:"Regeneration");
+  final wolverine = new Hero(name:'Logan', power:'Regeneration');
   print(wolverine);
+} */
+// TODO:  F H
+/* class Hero{
+  String? power;
+  String? name;
+
+  Hero({required this.name, required this.power});
+
+  Hero.fromJson(Map<String, String> json){
+    this.name =json['name']!;
+    this.power =json['power']!;
+  }
+
+  String toString(){
+    return 'Hero:\nname:${this.name}\nPower:${this.power}';
+  }
 }
+void main (){
+  final rawJson = {
+    'Name' : 'Tony',
+    'Power': 'Money',
+  };
+  print(rawJson);
+
+  // final wolverine = new Hero(name:'Logan', power:'Regeneration');
+  // print(wolverine);
+} */
+
+// FIXME: Class
