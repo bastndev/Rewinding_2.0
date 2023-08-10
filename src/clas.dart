@@ -15,7 +15,7 @@ void main() {
 
 // FIXME: Update Class | Practice 
 
-class MultiNumber{
+/* class MultiNumber{
   double num1;
   double num2;
 
@@ -27,4 +27,25 @@ void main(){
   final multi1 = MultiNumber(5, 5);
   final result = multi1.multi();
   print("The Multiply is: $result");
+} */
+
+//FIXME: Fernando H | Class
+
+/* class Hero{
+  String? power;
+  String? name;
+
+  String toString(){
+    return 'Hero:\nname:$name\nPower:$power';
+  }
 }
+
+void main (){
+
+  final wolverine = new Hero();
+  wolverine.name = 'Logan';
+  wolverine.power = 'REgeneration';
+  print(wolverine);
+} */
+
+// TODO: F Herrera
