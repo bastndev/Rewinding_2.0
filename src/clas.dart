@@ -49,3 +49,19 @@ void main (){
 } */
 
 // TODO: F Herrera
+class Hero{
+  String power;
+  String name;
+
+  Hero(this.name, this.power);
+
+  String toString(){
+    return 'Hero:\nname:${this.name}\nPower:${this.power}';
+  }
+}
+
+void main (){
+
+  final wolverine = new Hero("Logan", "Regeneration");
+  print(wolverine);
+}
