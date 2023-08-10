@@ -110,3 +110,26 @@ void main (){
 } */
 
 // FIXME: Class
+class Hero{
+  String? power;
+  String? name;
+
+  Hero({required this.name, required this.power});
+
+  Hero.fromJson(Map<String, String> json){
+    this.name  = json['name']!;
+    this.power = json['power']!;
+  }
+
+  String toString(){
+    return 'Hero:\nname:${this.name}\nPower:${this.power}';
+  }
+}
+void main (){
+  final rawJson = {
+    'name' : 'Tony Stark',
+    'power': 'Money',
+  };
+  final ironman = Hero.fromJson(rawJson);
+  print(ironman);
+}
