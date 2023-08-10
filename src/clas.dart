@@ -48,8 +48,8 @@ void main (){
   print(wolverine);
 } */
 
-// TODO: F Herrera
-class Hero{
+// FIXME: F Herrera
+/* class Hero{
   String power;
   String name;
 
@@ -63,5 +63,23 @@ class Hero{
 void main (){
 
   final wolverine = new Hero("Logan", "Regeneration");
+  print(wolverine);
+} */
+
+// TODO:  F H
+class Hero{
+  String power;
+  String name;
+
+  Hero({required this.name, required this.power});
+
+  String toString(){
+    return 'Hero:\nname:${this.name}\nPower:${this.power}';
+  }
+}
+
+void main (){
+
+  final wolverine = new Hero(name:"Logan", power:"Regeneration");
   print(wolverine);
 }
