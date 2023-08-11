@@ -217,3 +217,22 @@ void main() {
   print(result);
 }
  */
+
+//FIXME: Class | Practice
+class Sum {
+  String name;
+  int age;
+  double stature;
+
+  Sum(this.name, this.age, this.stature);
+
+  String getInfo() {
+    return "My name is $name. I am $age years old and I am ${stature.toStringAsFixed(2)} meters tall.";
+  }
+}
+
+void main() {
+  final num1 = Sum("Lucas", 10, 1.5);
+  final result = num1.getInfo();
+  print(result);
+}
