@@ -135,18 +135,18 @@ void main (){
 } */
 
 //FIXME: Class
-class Hero {
+/* class Hero {
   String name;
   String power;
 
   Hero({required this.name, required this.power});
 
-  Hero.fromJson(Map<String, String> json):
-    this.name = json['name']!,
-    this.power = json['power']??"He don't have Power";
+  Hero.fromJson(Map<String, String> json)
+      : this.name = json['name']!,
+        this.power = json['power'] ?? "He don't have Power";
 
   String toString() {
-    return 'Hero:\nname:${this.name}\nPower:${this.power}';
+    return 'Hero \nname:${this.name}\nPower:${this.power}';
   }
 }
 
@@ -157,4 +157,23 @@ void main() {
   };
   final ironman = Hero.fromJson(rawJson);
   print(ironman);
+}
+ */
+
+//TODO:  Class | Update
+
+class Hero {
+  int name;
+  int power;
+
+  Hero(this.name, this.power);
+
+  int sumNum() => name + power;
+}
+
+void main() {
+  final sum1 = Hero(11, 20);
+  final result = sum1.sumNum();
+
+  print(result);
 }
