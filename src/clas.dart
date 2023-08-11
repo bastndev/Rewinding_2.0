@@ -180,7 +180,7 @@ void main() {
  */
 
 // FIXME: Class | Update Focus 20 matate 30 pico alto
-class Sum {
+/* class Sum {
   int num1;
   int num2;
 
@@ -195,4 +195,25 @@ void main(){
   final result = num1.suma();
 
   print(result);
+} */
+
+// FIXME: Update ``Class`` Focus Money first Next Love
+
+/* class Sum {
+  String name;
+  int age;
+  double stature;
+
+  Sum(this.name, this.age, this.stature);
+
+  String getInfo() {
+    return "My name is $name. I am $age years old and I am $stature meters tall.";
+  }
 }
+
+void main() {
+  final num1 = Sum("Lucas", 20, 1.50);
+  final result = num1.getInfo();
+  print(result);
+}
+ */
