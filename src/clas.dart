@@ -162,7 +162,7 @@ void main() {
 
 //TODO:  Class | Update
 
-class Hero {
+/* class Hero {
   int name;
   int power;
 
@@ -172,8 +172,11 @@ class Hero {
 }
 
 void main() {
-  final sum1 = Hero(11, 20);
+  final sum1 = Hero(11, 23);
   final result = sum1.sumNum();
 
   print(result);
 }
+ */
+
+// FIXME: Class | Update Focus 20 matate 30 pico alto
