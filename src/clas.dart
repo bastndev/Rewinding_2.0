@@ -180,3 +180,19 @@ void main() {
  */
 
 // FIXME: Class | Update Focus 20 matate 30 pico alto
+class Sum {
+  int num1;
+  int num2;
+
+  Sum(this.num1, this.num2);
+
+  int suma() => num1 + num2;
+}
+
+void main(){
+
+  final num1 = Sum(10, 4);
+  final result = num1.suma();
+
+  print(result);
+}
