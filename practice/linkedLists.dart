@@ -67,4 +67,4 @@ void main() {
   linkedList.display();
 }
 
-//FIXME:
+//FIXME: Practice LinkedList | Delete NUmber
