@@ -144,17 +144,21 @@ void main() {
   }
 } */
 
+
 void main() {
   int note = 2;
 
   switch (note) {
-    case 1:
+    case 5:
       print('Disapproved');
 
-    case 2:
+    case 6:
       print('Approved');
 
-    case 3:
+    case 10:
       print('Excellent');
+    
+    default:
+    print('Suspended');
   }
 }
