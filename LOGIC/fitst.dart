@@ -96,3 +96,33 @@ void main() {
 }
  */
 
+// --- --- -TODO: Practice const
+
+/* void main() {
+  const pi = 3.1415;
+  double n1 = 1.3, n2 = 7.2, n3;
+
+  n3 = pi;
+  n2 = n3 + pi;
+  n1 = n2 / n1;
+  n3 = n2 + n1;
+  n2 = n2 - pi;
+
+  print("N1:$n1");
+  print("N2:$n2");
+  print("N3:$n3");
+} */
+
+void main() {
+  const pi = 3.1415;
+  double n1 = 2.5, n2 = 7.2, n3;
+  n3 = pi;
+  n2 = n3 + pi;
+  n1 = n2 / n1;
+  n3 = n2 + n1;
+  n2 = n2 - pi;
+
+  print("Initial value of N1: $n1");
+  print("Updated value of N2: $n2");
+  print("Final value of N3: $n3");
+}
