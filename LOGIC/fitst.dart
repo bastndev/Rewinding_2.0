@@ -144,7 +144,6 @@ void main() {
   }
 } */
 
-
 /* void main() {
   int note = 2;
 
@@ -163,4 +162,19 @@ void main() {
   }
 } */
 
-//--- -TODO: if and elses
+//--- -TODO: Arithmetic
+void main() {
+  int a = 10;
+  int b = 20;
+  int c = 25;
+  int d = 25;
+
+  print("a + b: ${a + b}");
+  print("a - b: ${a - b}");
+  print("a * b: ${a * b}");
+  print("b / a: ${b / a}");
+  print("b % a: ${b % a}");
+  print("c % a: ${c % a}");
+  print("a ++: ${++a}");
+  print("b --: ${--b}");
+}
