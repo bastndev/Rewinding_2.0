@@ -1,5 +1,5 @@
 //--- --- -TODO: variables, SWAP VALOR WHIT TIME
-void main() {
+/* void main() {
   // Numeric variables
   int age = 25;
   double height = 1.75;
@@ -25,4 +25,8 @@ void main() {
   print('Is student: $isStudent');
   print('Colors: $colors');
   print('Person information: $person');
-}
+} */
+
+
+//--- --- -FIXME: const
+// the constants never change, Example: PI 3.1415
