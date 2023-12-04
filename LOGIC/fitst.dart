@@ -39,7 +39,7 @@
   print("My name in $name and I'm age: $age");
 } */
 
-void main() {
+/* void main() {
   int n1 = 2;
   int n2 = 5;
   int n3 = 0;
@@ -53,4 +53,17 @@ void main() {
   print("The valor of n1: $n1");
   print("The valor of n2: $n2");
   print("The valor of n3: $n3");
-}
+} */
+
+/* void main() {
+  int n1 = 2, n2 = 5, n3 = 0;
+  n3 = n2 - n1;
+  n2 = 2;
+  n1 = n1 + n3;
+  n3 = n2 * n3;
+  n2 = n3 ~/ n1;
+
+  print("El valor de n1 = $n1");
+  print("El valor de n2 = $n2");
+  print("El valor de n3 = $n3");
+} */
