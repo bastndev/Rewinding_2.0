@@ -40,7 +40,17 @@
 } */
 
 void main() {
-  int nu1 = 1, nu2 = 2, nu3 = 3, nu4 = 4;
+  int n1 = 2;
+  int n2 = 5;
+  int n3 = 0;
 
-  print("num:$nu4,$nu3,$nu2,$nu1");
+  n3 = n2 - n1;
+  n2 = 2;
+  n1 = n1 + n3;
+  n3 = n2 * n3;
+  n2 = n3 ~/ n1;;
+
+  print("The valor of n1: $n1");
+  print("The valor of n2: $n2");
+  print("The valor of n3: $n3");
 }
