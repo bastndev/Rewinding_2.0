@@ -194,3 +194,13 @@ void main() {
 } */
 
 // --- -TODO: Logical
+
+/* void main() {
+  bool v = true;
+  bool f = false;
+
+  print("v && f: ${v && f}");
+  print("v || f: ${v || f}");
+  print("!(v && f): ${!(v && f)}");
+}
+ */
