@@ -113,7 +113,7 @@ void main() {
   print("N3:$n3");
 } */
 
-void main() {
+/* void main() {
   const pi = 3.1415;
   double n1 = 2.5, n2 = 7.2, n3;
   n3 = pi;
@@ -125,4 +125,21 @@ void main() {
   print("Initial value of N1: $n1");
   print("Updated value of N2: $n2");
   print("Final value of N3: $n3");
+}
+ */
+
+//--- -TODO: if and else
+void main() {
+  int dayOfWeen = 2;
+
+  switch (dayOfWeen) {
+    case 1:
+      print("Monday");
+      break;
+    case 2:
+      print("Tuesday");
+      break;
+    default:
+      print("Día no valid");
+  }
 }
