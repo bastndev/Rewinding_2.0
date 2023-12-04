@@ -129,7 +129,7 @@ void main() {
  */
 
 //--- -TODO: if and else
-void main() {
+/* void main() {
   int dayOfWeen = 2;
 
   switch (dayOfWeen) {
@@ -141,5 +141,20 @@ void main() {
       break;
     default:
       print("Día no valid");
+  }
+} */
+
+void main() {
+  int note = 2;
+
+  switch (note) {
+    case 1:
+      print('Disapproved');
+
+    case 2:
+      print('Approved');
+
+    case 3:
+      print('Excellent');
   }
 }
