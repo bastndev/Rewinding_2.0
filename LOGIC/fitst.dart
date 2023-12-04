@@ -38,3 +38,9 @@
 
   print("My name in $name and I'm age: $age");
 } */
+
+void main() {
+  int nu1 = 1, nu2 = 2, nu3 = 3, nu4 = 4;
+
+  print("num:$nu4,$nu3,$nu2,$nu1");
+}
