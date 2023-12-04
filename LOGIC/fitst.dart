@@ -27,6 +27,14 @@
   print('Person information: $person');
 } */
 
-
 //--- --- -FIXME: const
 // the constants never change, Example: PI 3.1415
+
+// --- -TODO: Practice
+
+/* void main() {
+  String name = 'lucas';
+  int age = 21;
+
+  print("My name in $name and I'm age: $age");
+} */
