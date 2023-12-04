@@ -128,7 +128,7 @@ void main() {
 }
  */
 
-//--- -TODO: if and else
+//--- -TODO:  witch
 /* void main() {
   int dayOfWeen = 2;
 
@@ -145,7 +145,7 @@ void main() {
 } */
 
 
-void main() {
+/* void main() {
   int note = 2;
 
   switch (note) {
@@ -161,4 +161,6 @@ void main() {
     default:
     print('Suspended');
   }
-}
+} */
+
+//--- -TODO: if and elses
