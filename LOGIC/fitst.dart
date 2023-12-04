@@ -57,6 +57,7 @@
 
 /* void main() {
   int n1 = 2, n2 = 5, n3 = 0;
+
   n3 = n2 - n1;
   n2 = 2;
   n1 = n1 + n3;
@@ -67,3 +68,29 @@
   print("El valor de n2 = $n2");
   print("El valor de n3 = $n3");
 } */
+
+class MathematicalOperations {
+  int n1, n2, n3;
+
+  MathematicalOperations(this.n1, this.n2) : n3 = 0;
+
+  void performOperations() {
+    n3 = n2 - n1;
+    n2 = 2;
+    n1 = n1 + n3;
+    n3 = n2 * n3;
+    n2 = n3 ~/ n1;
+  }
+
+  void printValues() {
+    print("The value of n1 = $n1");
+    print("The value of n2 = $n2");
+    print("The value of n3 = $n3");
+  }
+}
+
+void main() {
+  MathematicalOperations operations = MathematicalOperations(2, 5);
+  operations.performOperations();
+  operations.printValues();
+}
