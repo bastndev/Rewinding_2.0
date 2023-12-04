@@ -180,3 +180,15 @@ void main() {
  */
 
 //--- -TODO: Relational
+
+/* void main() {
+  int a = 10;
+  int b = 20;
+
+  print("a == b: ${a == b}");
+  print("a != b: ${a != b}"); //NO SON IGUALES
+  print("a > b: ${a > b}");
+  print("a < b: ${a < b}");
+  print("b >= a: ${b >= a}");
+  print("b <= a: ${b <= a}");
+} */
