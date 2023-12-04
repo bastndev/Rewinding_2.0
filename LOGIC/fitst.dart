@@ -69,7 +69,7 @@
   print("El valor de n3 = $n3");
 } */
 
-class MathematicalOperations {
+/* class MathematicalOperations {
   int n1, n2, n3;
 
   MathematicalOperations(this.n1, this.n2) : n3 = 0;
@@ -94,3 +94,5 @@ void main() {
   operations.performOperations();
   operations.printValues();
 }
+ */
+
