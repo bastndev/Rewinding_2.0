@@ -120,8 +120,17 @@
 //...las Condicienes van entre los parentesis  (condicion)
 //--- -TODO: for (){}
 
-void main() {
+/* void main() {
   for (int i = 0; i < 5; ++i) {
     print("Hello ${i}");
+  }
+}
+ */
+
+void main() {
+  List<String> lyrics = ['a', 'e', 'i', 'o', 'u'];
+
+  for (String lyric in lyrics) {
+    print("Hello: $lyric");
   }
 }
