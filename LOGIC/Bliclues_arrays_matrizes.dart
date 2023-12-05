@@ -193,11 +193,21 @@
 
 //--- --- -TODO: while (condicion ) {realizar}
 
-void main() {
+/* void main() {
   int i = 0;
 
   while (i < 5) {
     print(i);
     i++;
   }
+} */
+//--- --- -TODO: do  while (condicion ) {realizar}
+
+void main() {
+  int number = 1;
+
+  do {
+    print("hello $number");
+    number++;
+  } while (number < 5);
 }
