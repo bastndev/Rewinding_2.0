@@ -203,11 +203,19 @@
 } */
 //--- --- -TODO: do  while (condicion ) {realizar}
 
-void main() {
+/* void main() {
   int number = 1;
 
   do {
     print("hello $number");
     number++;
   } while (number < 5);
+} */
+
+// --- FIXME: Practice
+
+void main() {
+  String g = 'My', o = 'an', m = 'mar';
+
+  print("${g + o + m} <3");
 }
