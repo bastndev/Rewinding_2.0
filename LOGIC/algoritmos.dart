@@ -9,13 +9,25 @@
 
 // --- --- -TODO: Rectangle area
 
-void main() {
+/* void main() {
   double a = 13;
   double b = 3;
 
   double area = a * b;
 
   print("The area rectangle is: $area");
-}
+} */
 
 // --- --- -TODO: Square area
+
+void main() {
+  double ladoA = 10.13;
+  double ladoB = 3;
+
+  double area1 = ladoA * ladoA;
+
+  double area2 = ladoB * ladoB;
+
+  print("The area square is: $area1");
+  print("The area square is: $area2");
+}
