@@ -92,7 +92,7 @@
 }
  */
 
-void main() {
+/* void main() {
   int x = 2;
 
   do {
@@ -103,4 +103,14 @@ void main() {
       print("No, it doesn't multiply: $x");
     }
   } while (x > 4);
+} */
+//--- -FIXME: Practice 
+void main() {
+  int x = 2;
+
+  do {
+    x = x * 2;
+    print("aea mano");
+  } while (x < 10);
+  print("El valor final de x es: $x");
 }
