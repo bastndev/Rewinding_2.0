@@ -104,7 +104,8 @@
     }
   } while (x > 4);
 } */
-//--- -FIXME: Practice 
+//--- -FIXME: Practice
+//It multiplies 2 by 2, equals 4, times 2 equals 8, times 2 equals 16, until finally it is greater than 10.
 void main() {
   int x = 2;
 
