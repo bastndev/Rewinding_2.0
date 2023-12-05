@@ -137,8 +137,28 @@
 }
  */
 
-void main() {
+/* void main() {
   List<String> lyrics = ['a', 'e', 'i', 'o', 'u'];
 
   lyrics.forEach(print);
-}
+} */
+
+/* void main() {
+  List<String> lyrics = ['a', 'e', 'i', 'o', 'u'];
+
+  for (String lyric in lyrics) {
+    if (lyric == 'u') {
+      print("Hello: $lyric");
+    }
+  }
+} */
+
+/* void main() {
+  List<String> animals = ['cat', 'dog', 'dac'];
+
+  for (String animal in animals) {
+    if (animal == 'cat') {
+      print("I have a $animal");
+    }
+  }
+} */
