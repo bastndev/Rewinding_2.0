@@ -162,3 +162,20 @@
     }
   }
 } */
+
+/* void main() {
+  List<String> animals = ['cat', 'dog', 'dac'];
+  bool foundCat = false;
+
+  for (String animal in animals) {
+    if (animal == 'rabbit') {
+      foundCat = true;
+    }
+  }
+
+  if (foundCat) {
+    print("I have a cat");
+  } else {
+    print("I don't have a cat");
+  }
+} */
