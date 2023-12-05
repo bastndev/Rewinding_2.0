@@ -104,9 +104,10 @@
     }
   } while (x > 4);
 } */
-//--- -FIXME: Practice
+
+//--- -FIXME: Practice while
 //It multiplies 2 by 2, equals 4, times 2 equals 8, times 2 equals 16, until finally it is greater than 10.
-void main() {
+/* void main() {
   int x = 2;
 
   do {
@@ -114,4 +115,7 @@ void main() {
     print("aea mano");
   } while (x < 10);
   print("El valor final de x es: $x");
-}
+} */
+
+//...las Condicienes van entre los parentesis  (condicion)
+
