@@ -19,7 +19,7 @@
   }
 } */
 
-void printNumberOfDigits(int num) {
+/* void printNumberOfDigits(int num) {
   if (num < 0 || num > 9999) {
     print("Wtf pls enter number, but only 4 digits, Thanks!");
     return;
@@ -40,5 +40,4 @@ void main() {
   int num = 99; // You may want to get the input from the user
 
   printNumberOfDigits(num);
-}
-
+} */
