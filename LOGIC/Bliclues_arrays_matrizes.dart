@@ -127,11 +127,18 @@
 }
  */
 
-void main() {
+/* void main() {
   List<String> lyrics = ['a', 'e', 'i', 'o', 'u'];
 
   for (String lyric in lyrics) {
     print("Hello: $lyric");
   }
 
+}
+ */
+
+void main() {
+  List<String> lyrics = ['a', 'e', 'i', 'o', 'u'];
+
+  lyrics.forEach(print);
 }
