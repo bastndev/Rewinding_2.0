@@ -179,3 +179,14 @@
     print("I don't have a cat");
   }
 } */
+
+void main() {
+  List<String> animals = ['cat', 'dog', 'dac'];
+  bool foundCat = animals.contains('rabbit');
+
+  if (foundCat) {
+    print("I have a cat");
+  } else {
+    print("I don't have a cat");
+  }
+}
