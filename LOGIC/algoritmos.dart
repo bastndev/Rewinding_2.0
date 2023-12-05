@@ -6,3 +6,7 @@ void main() {
   double area = radio * radio * pi;
   print("The area circle is: $area");
 }
+
+// --- --- -TODO: Rectangle area
+
+// --- --- -TODO: Square area
