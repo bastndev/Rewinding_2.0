@@ -12,5 +12,13 @@
  */
 
 void main() {
-  
+  int age =90;
+
+  if (age <= 12) {
+    print("You are children");
+  } else if (age <= 17) {
+    print("you are teen");
+  } else {
+    print("You are adult");
+  }
 }
