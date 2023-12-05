@@ -20,7 +20,7 @@
 
 // --- --- -TODO: Square area
 
-void main() {
+/* void main() {
   double ladoA = 10.13;
   double ladoB = 3;
 
@@ -31,3 +31,4 @@ void main() {
   print("The area square is: $area1");
   print("The area square is: $area2");
 }
+ */
