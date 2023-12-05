@@ -1,6 +1,6 @@
-//-TODO: se if he id of age  or not
+//-TODO: se if he id of age  or not +18
 
-void main() {
+/* void main() {
   int age = 18;
 
   if (age >= 18) {
@@ -8,4 +8,9 @@ void main() {
   } else {
     print("Hello, children");
   }
+}
+ */
+
+void main() {
+  
 }
