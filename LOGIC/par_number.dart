@@ -11,7 +11,7 @@
 }
  */
 
-void main() {
+/* void main() {
   int number = 9;
 
   if (number > 0) {
@@ -23,4 +23,4 @@ void main() {
   } else {
     print("Enter a number positive");
   }
-}
+} */
