@@ -180,7 +180,7 @@
   }
 } */
 
-void main() {
+/* void main() {
   List<String> animals = ['cat', 'dog', 'dac'];
   bool foundCat = animals.contains('rabbit');
 
@@ -188,5 +188,16 @@ void main() {
     print("I have a cat");
   } else {
     print("I don't have a cat");
+  }
+} */
+
+//--- --- -TODO: while (condicion ) {realizar}
+
+void main() {
+  int i = 0;
+
+  while (i < 5) {
+    print(i);
+    i++;
   }
 }
