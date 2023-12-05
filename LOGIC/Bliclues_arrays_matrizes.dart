@@ -80,7 +80,7 @@
   print("El valor final de x es: $x");
 } */
 
-void main() {
+/* void main() {
   int x = 2;
 
   if (x > 4) {
@@ -89,4 +89,18 @@ void main() {
   } else {
     print("No se multiple $x");
   }
+}
+ */
+
+void main() {
+  int x = 2;
+
+  do {
+    if (x > 4) {
+      x = x * 2;
+      print("Yes, it multiplies: $x");
+    } else {
+      print("No, it doesn't multiply: $x");
+    }
+  } while (x > 4);
 }
