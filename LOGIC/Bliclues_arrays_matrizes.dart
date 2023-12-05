@@ -19,8 +19,6 @@
   print("El valor final de x es: $x");
 } */
 
-
-
 /* void main() {
   int x = 5;
 
@@ -31,7 +29,7 @@
 }
  */
 
-void main() {
+/* void main() {
   int x = 5;
 
   while (x > 0) {
@@ -39,3 +37,14 @@ void main() {
   }
   print("aea mano $x");
 }
+ */
+
+/* void main() {
+  int x = 10;
+
+  while (x != 10) {
+    x += 10;
+  }
+  print(x);
+}
+ */
