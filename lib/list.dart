@@ -68,3 +68,4 @@ void main() {
   print("\nList before de delete el node con valor 2:");
   linkedList.printList();
 }
+// -TODO: Practice
