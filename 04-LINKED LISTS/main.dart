@@ -31,3 +31,12 @@
   print(numbers);
 } */
 
+void main() {
+  final List<int> numbers = [4, 3, 2, 1];
+
+  // final num numberAdd = numbers.insert(0,8);
+
+  numbers.insert(0,8);
+
+  print("The 8 number add to start: $numbers");
+}
