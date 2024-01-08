@@ -12,7 +12,8 @@
 
   print("The list united is: $matte");
 } */
-void main() {
+
+/* void main() {
   final List<int> list1 = [1, 2, 4, 6];
   final List<int> list2 = [2, 3, 5];
 
@@ -20,4 +21,15 @@ void main() {
   final matte = uniList.toSet().toList()..sort();
 
   print("The list united and no repeated number is: $matte");
+} */
+
+void main() {
+  List<int> numbers = [3, 1, 4, 1, 5, 9];
+
+  numbers
+    ..remove(1)
+    ..add(2)
+    ..sort();
+
+  print("Modified list: $numbers");
 }
