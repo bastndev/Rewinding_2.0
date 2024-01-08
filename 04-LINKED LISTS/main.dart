@@ -7,8 +7,8 @@
 }
  */
 
-// -TODO: LOOP, while
-void main() {
+// -FIXME: LOOP, while
+/* void main() {
   final List<int> numbers = [4, 3, 2, 1];
 
   print('Original list: $numbers');
@@ -19,3 +19,15 @@ void main() {
 
   print('List after Delete 2: $numbers');
 }
+ */
+
+//-TODO: Add number 8 last
+
+/* void main() { 
+  final List<int> numbers = [4, 3, 2, 1];
+
+  numbers.add(8);
+
+  print(numbers);
+} */
+
