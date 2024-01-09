@@ -1,5 +1,5 @@
 class Stack {
-   List<int> _stack = [];
+  final List<int> _stack = [];
 
   bool get isEmpty => _stack.isEmpty;
 
