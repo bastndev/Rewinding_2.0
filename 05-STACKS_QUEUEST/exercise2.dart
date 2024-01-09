@@ -1,5 +1,5 @@
 class Stack {
-  List<int> _stack = [];
+   List<int> _stack = [];
 
   bool get isEmpty => _stack.isEmpty;
 
@@ -7,14 +7,14 @@ class Stack {
 
   int pop() {
     if (isEmpty) {
-      throw Exception('Stack is empty');
+      throw Exception("stack is empty pop");
     }
     return _stack.removeLast();
   }
 
   int get top {
     if (isEmpty) {
-      throw Exception('Stack is empty');
+      throw Exception("stack is empty pop2");
     }
     return _stack.last;
   }
@@ -29,10 +29,8 @@ void sortStack(Stack stack) {
     while (!tempStack.isEmpty && tempStack.top > temp) {
       stack.push(tempStack.pop());
     }
-
     tempStack.push(temp);
   }
-
   while (!tempStack.isEmpty) {
     stack.push(tempStack.pop());
   }
@@ -40,7 +38,7 @@ void sortStack(Stack stack) {
 
 void main() {
   Stack stack = Stack();
-  stack.push(5);
+  stack.push(9);
   stack.push(1);
   stack.push(4);
   stack.push(2);
