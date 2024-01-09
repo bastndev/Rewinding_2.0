@@ -1,4 +1,5 @@
-//Pila (Stack):
+//Pila (Stack): last enter, first exit
+
 /* class Pila {
   List _elements = [];
 
@@ -32,4 +33,35 @@ void main() {
 }
  */
 
-//Cola (Queue):
+//Cola (Queue): fist enter first exit
+class Cola {
+  List _elements = [];
+
+  void enqueue(dynamic element) {
+    _elements.add(element);
+  }
+
+  dynamic dequeue() {
+    if (_elements.isNotEmpty) {
+      return _elements.removeAt(0);
+    } else {
+      return null;
+    }
+  }
+
+  bool isEmpty() {
+    return _elements.isEmpty;
+  }
+}
+
+void main() {
+  Cola miCola = Cola();
+
+  miCola.enqueue(1);
+  miCola.enqueue(2);
+  miCola.enqueue(3);
+
+  while (!miCola.isEmpty()) {
+    print("Element Queue: : ${miCola.dequeue()}");
+  }
+}
