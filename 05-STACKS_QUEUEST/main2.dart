@@ -1,6 +1,6 @@
 //Pila (Stack): last enter, first exit
 
-/* class Pila {
+class Pila {
   List _elements = [];
 
   void push(dynamic element) {
@@ -31,10 +31,10 @@ void main() {
     print("Element stack: ${miPila.pop()}");
   }
 }
- */
+
 
 //Cola (Queue): fist enter first exit
-class Cola {
+/* class Cola {
   List _elements = [];
 
   void enqueue(dynamic element) {
@@ -65,3 +65,4 @@ void main() {
     print("Element Queue: : ${miCola.dequeue()}");
   }
 }
+ */
