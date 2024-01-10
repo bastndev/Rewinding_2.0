@@ -13,6 +13,8 @@ void main() {
 
   print("====== TRUE OR FALSE ======");
 
+  final result = ValidateBST().isValidBST(root);
+  print("This result is: $result ");
 }
 
 class Node {
@@ -20,4 +22,15 @@ class Node {
   Node? left;
   Node? right;
   Node(this.val, {this.left, this.right});
+}
+
+class ValidateBST {
+  bool isValidBST(Node? root, [int? min, int? max]) {
+    if (root == null) return true;
+    if ((min != null && root.val <= min) || (max != null && root.val > max))
+      return false;
+
+    return isValidBST(root.left, min, root.val) &&
+        isValidBST(root.right, root.val, max);
+  }
 }
