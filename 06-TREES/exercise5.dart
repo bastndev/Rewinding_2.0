@@ -23,6 +23,9 @@ void main() {
   print("   ${second.left?.left!.val} ");
 
   print("====== SUB TREE ======");
+
+  final result = IsSubTree().isSubTree(first, second);
+  print("Sub Tree is: $result");
 }
 
 class Node {
@@ -30,4 +33,26 @@ class Node {
   Node? left;
   Node? right;
   Node(this.val, {this.left, this.right});
+}
+
+class IsSubTree {
+  bool isSubTree(Node? first, Node? second) {
+    StringBuffer sb1 = new StringBuffer();
+    StringBuffer sb2 = new StringBuffer();
+
+    _preOrder(first, sb1);
+    _preOrder(second, sb2);
+
+    return sb1.toString().contains(sb1.toString());
+  }
+
+  void _preOrder(Node? node, StringBuffer sb) {
+    if (node == null) {
+      sb.write("X");
+      return;
+    }
+    sb.write(node.val);
+    _preOrder(node.left, sb);
+    _preOrder(node.right, sb);
+  }
 }
