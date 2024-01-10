@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   var root = Node(4);
   root.left = Node(2);
@@ -12,6 +14,8 @@ void main() {
   print("${root.left?.left?.left!.val}");
 
   print("====== DEPTH ======");
+  final result = MaximumDepth().maxDepth(root);
+  print("The maximum depth is: $result");
 }
 
 class Node {
@@ -22,5 +26,12 @@ class Node {
 }
 
 class MaximumDepth {
-  
+  int maxDepth(Node? root) {
+    if (root == null) return 0;
+
+    int depthLeft = maxDepth(root.left) + 1;
+    int depthRight = maxDepth(root.right) + 1;
+
+    return max<int>(depthLeft, depthRight);
+  }
 }
