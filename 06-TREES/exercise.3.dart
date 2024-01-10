@@ -20,3 +20,7 @@ class Node {
   Node? right;
   Node(this.val, {this.left, this.right});
 }
+
+class MaximumDepth {
+  
+}
