@@ -15,6 +15,8 @@ void main() {
       "${root.left?.left!.val}     ${root.left?.right!.val}   ${root.right?.right!.val}     ${root.right?.left!.val}");
 
   print("====== LIST ======");
+
+  
 }
 
 class Node {
@@ -22,4 +24,23 @@ class Node {
   Node? left;
   Node? right;
   Node(this.val, {this.left, this.right});
+}
+
+List<List<int>> listOfDepths(Node? root) {
+  if (root == null) return [];
+
+  List<List<int>> lists = [];
+  Queue<Node> queue = Queue();
+  queue.add(root);
+
+  while (queue.isNotEmpty) {
+    List<int> level = [];
+    for (int i = queue.length; i > 0; i--) {
+      Node node = queue.removeFirst();
+      level.add(node.val);
+      if (node.left == null) queue.add(node.left!);
+      if (node.right == null) queue.add(node.right!);
+    }
+  }
+  return lists;
 }
