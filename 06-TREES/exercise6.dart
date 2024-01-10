@@ -14,10 +14,14 @@ void main() {
   print("====== DEPTH ======");
 
   FirstCommonAncestor fca = FirstCommonAncestor();
-  print(
-      "firstCommonAncestor(1,7)= ${fca.firstCommonAncestor(root, Node(1), Node(7)).val}");
-  print(
-      "firstCommonAncestor(1,4)= ${fca.firstCommonAncestor(root, Node(1), Node(4)).val}");
+  try {
+    print(
+        "firstCommonAncestor(1,7)= ${fca.firstCommonAncestor(root, Node(1), Node(7)).val}");
+    print(
+        "firstCommonAncestor(1,4)= ${fca.firstCommonAncestor(root, Node(1), Node(4)).val}");
+  } catch (e) {
+    print("Exception: $e");
+  }
   print(
       "firstCommonAncestor(1,3)= ${fca.firstCommonAncestor(root, Node(1), Node(3)).val}");
 }
@@ -35,7 +39,7 @@ class _AncestorNode {
 }
 
 class FirstCommonAncestor {
-  Node firstCommonAncestor(Node root, Node firstNode, Node secondNode) {
+  Node firstCommonAncestor(Node? root, Node firstNode, Node secondNode) {
     try {
       return postOrderSearch(root, firstNode, secondNode).ancestor!;
     } catch (e) {
@@ -56,7 +60,7 @@ class FirstCommonAncestor {
         postOrderSearch(root.right, firstNode, secondNode);
     if (rightResult.ancestor != null) return rightResult;
 
-    _AncestorNode result = new _AncestorNode();
+    _AncestorNode result = _AncestorNode();
 
     if (leftResult.nodeFound && rightResult.nodeFound) {
       result.ancestor = root;
