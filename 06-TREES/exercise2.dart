@@ -1,11 +1,13 @@
+import 'dart:collection';
+
 void main() {
-  var root = TreeNode(4);
-  root.left = TreeNode(2);
-  root.right = TreeNode(7);
-  root.left?.left = TreeNode(1);
-  root.left?.right = TreeNode(3);
-  root.right?.right = TreeNode(6);
-  root.right?.left = TreeNode(9);
+  var root = Node(4);
+  root.left = Node(2);
+  root.right = Node(7);
+  root.left?.left = Node(1);
+  root.left?.right = Node(3);
+  root.right?.right = Node(6);
+  root.right?.left = Node(9);
 
   print("         ${root.val}");
   print("   ${root.left!.val}         ${root.right!.val}");
@@ -13,11 +15,37 @@ void main() {
       "${root.left?.left!.val}     ${root.left?.right!.val}   ${root.right?.right!.val}     ${root.right?.left!.val}");
 
   print("====== LIST ======");
+
+  List<List<int>> lists = listOfDepths(root);
+  for (var list in lists) {
+    print(list);
+  }
 }
 
-class TreeNode {
+class Node {
   var val;
-  TreeNode? left;
-  TreeNode? right;
-  TreeNode(this.val, {this.left, this.right});
+  Node? left;
+  Node? right;
+  Node(this.val, {this.left, this.right});
+}
+
+List<List<int>> listOfDepths(Node? root) {
+  if (root == null) return [];
+  
+  List<List<int>> lists = [];
+  Queue<Node> queue = Queue();
+  queue.add(root);
+  
+  while (queue.isNotEmpty) {
+    List<int> level = [];
+    for (int i = queue.length; i > 0; i--) {
+      Node node = queue.removeFirst();
+      level.add(node.val);
+      if (node.left != null) queue.add(node.left!);
+      if (node.right != null) queue.add(node.right!);
+    }
+    lists.add(level);
+  }
+  
+  return lists;
 }
