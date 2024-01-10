@@ -16,7 +16,10 @@ void main() {
 
   print("====== LIST ======");
 
-  
+  List<List<int>> list = listOfDepths(root);
+  for (var lista in list) {
+    print("Hello $lista");
+  }
 }
 
 class Node {
@@ -38,9 +41,10 @@ List<List<int>> listOfDepths(Node? root) {
     for (int i = queue.length; i > 0; i--) {
       Node node = queue.removeFirst();
       level.add(node.val);
-      if (node.left == null) queue.add(node.left!);
-      if (node.right == null) queue.add(node.right!);
+      if (node.left != null) queue.add(node.left!);
+      if (node.right != null) queue.add(node.right!);
     }
+    lists.add(level);
   }
   return lists;
 }
