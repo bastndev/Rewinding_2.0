@@ -4,12 +4,12 @@ void main() {
   root.right = Node(7);
   root.left?.left = Node(1);
   root.left?.right = Node(3);
-  root.left?.left?.left = Node(8);
+  root.left?.left?.left = Node(8); //Commend for true
 
   print("            ${root.val}");
   print("       ${root.left!.val}        ${root.right!.val}");
   print("   ${root.left?.left!.val}     ${root.left?.right!.val} ");
-  print("${root.left?.left?.left!.val}");
+  print("${root.left?.left?.left!.val}"); //Commend for true
 
   print("====== TRUE OR FALSE ======");
 
