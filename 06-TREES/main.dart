@@ -16,3 +16,14 @@ class Node {
   Node(this.val, {this.left, this.right});
 }
 
+class Solution {
+  bool validateBinaryTree(Node? node) {
+    if (node == null) {
+      return true;
+    }
+    if (node.val > double.negativeInfinity && node.val < double.infinity) {
+      return true;
+    }
+    return false;
+  }
+}
