@@ -37,8 +37,8 @@ class Node {
 
 class IsSubTree {
   bool isSubTree(Node? first, Node? second) {
-    StringBuffer sb1 = new StringBuffer();
-    StringBuffer sb2 = new StringBuffer();
+    StringBuffer sb1 = new StringBuffer(); //Not is necessary new
+    StringBuffer sb2 = new StringBuffer(); //Not is necessary new
 
     _preOrder(first, sb1);
     _preOrder(second, sb2);
