@@ -7,23 +7,18 @@ void main() {
   root.right?.right = TreeNode(6);
   root.right?.left = TreeNode(9);
 
-  print(root.val);
-  print(root.left!.val);
-  print(root.right!.val);
-  print(root.left?.left!.val);
-  print(root.left?.right!.val);
-  print(root.right?.right!.val);
-  print(root.right?.left!.val);
+  print("         ${root.val}");
+  print("   ${root.left!.val}         ${root.right!.val}");
+  print(
+      "${root.left?.left!.val}     ${root.left?.right!.val}   ${root.right?.right!.val}     ${root.right?.left!.val}");
 
+print("==================");
   var inverseBinaryTree = InverseBinaryTree();
   inverseBinaryTree.reverseTree(root);
-  print(root.val);
-  print(root.left!.val);
-  print(root.right!.val);
-  print(root.left?.left!.val);
-  print(root.left?.right!.val);
-  print(root.right?.right!.val);
-  print(root.right?.left!.val);
+  print("         ${root.val}");
+  print("   ${root.left!.val}         ${root.right!.val}");
+  print(
+      "${root.left?.left!.val}     ${root.left?.right!.val}   ${root.right?.right!.val}     ${root.right?.left!.val}");
 }
 
 class TreeNode {
