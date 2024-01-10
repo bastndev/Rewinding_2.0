@@ -16,6 +16,8 @@ void main() {
   print("   ${first.left?.left!.val}     ${first.left?.right!.val} ");
   print("${first.left?.left?.left!.val}");
 
+  print("  --- --- --- --- ---");
+
   print("            ${second.val}");
   print("       ${second.left!.val}        ${second.right!.val}");
   print("   ${second.left?.left!.val} ");
