@@ -13,6 +13,8 @@ void main() {
     [0, 0, 1]
   ];
   assert(3 == numberOfProvinces.numberOfProvinces(second));
+  print(
+      'Result for second matrix: ${numberOfProvinces.numberOfProvinces(second)}');
 }
 
 class NumberOfProvinces {
