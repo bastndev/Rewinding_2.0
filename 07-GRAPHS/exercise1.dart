@@ -45,7 +45,7 @@ class GraphNode {
   GraphNode(this.name);
 }
 
-enum GraphNodeStatus { Unvisited, Visited }
+enum GraphNodeStatus { Unvisited, Visited, Visiting }
 
 class Graph {
   Map<String, GraphNode> nodes = {};
