@@ -19,8 +19,10 @@ class TopKFrequent {
 void main() {
   TopKFrequent topKFrequent = TopKFrequent();
 
-  List<int> firstResult = topKFrequent.topKFrequent([1, 1, 1, 2, 2, 3], 2);
+  final List<int> firstResult = topKFrequent.topKFrequent([1, 1, 1, 2, 2, 3], 2);
   firstResult.sort();
   print(firstResult == [1, 2]);
   print(topKFrequent.topKFrequent([1, 1, 2, 3, 3, 3], 1) == [3]);
 }
+
+  // final List<String> medails = ['Gold Medal', 'Silver Medal', 'Bronze Medal'];
