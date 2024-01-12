@@ -4,8 +4,8 @@ class KthLargest {
   int _k;
   late PriorityQueue<int> heap;
 
-  KthLargest(int k, List<int> nums) {
-    this._k = k;
+  KthLargest(this._k, List<int> nums) {
+    this._k = _k;
     heap = PriorityQueue<int>((a, b) => a - b);
 
     for (int num in nums) {
