@@ -12,4 +12,15 @@ class MinHeap {
   int _leftChildIndex(int i) {
     return (i * 2) + 1;
   }
+
+  int _rightChildIndex(int i) {
+    return (i * 2) + 2;
+  }
+
+  bool _isLeaf(int i) {
+    if (_rightChildIndex(i) >= size && _leftChildIndex(i) >= size) {
+      return true;
+    }
+    return false;
+  }
 }
