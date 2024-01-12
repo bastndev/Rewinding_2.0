@@ -26,3 +26,4 @@ void main() {
 }
 
   // final List<String> medails = ['Gold Medal', 'Silver Medal', 'Bronze Medal'];
+    // arrival.sort((a, b) => b.compareTo(a));

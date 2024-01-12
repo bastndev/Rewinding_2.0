@@ -1,9 +1,14 @@
 void main() {
   final List<int> arrival = [10, 3, 8, 9, 4];
+  final List<int> arrival2 = [10, 11, 8, 9, 4];
 
   YouMedals topKFrequent = YouMedals(arrival);
   topKFrequent.sortArrival();
   print(topKFrequent.arrival);
+
+  YouMedals topKFrequent2 = YouMedals(arrival2);
+  topKFrequent2.sortArrival();
+  print(topKFrequent2.arrival);
 }
 
 class YouMedals {
@@ -12,14 +17,6 @@ class YouMedals {
   YouMedals(this.arrival);
 
   void sortArrival() {
-    for (int i = 0; i < arrival.length; i++) {
-      for (int j = 0; j < arrival.length - i - 1; j++) {
-        if (arrival[j] < arrival[j + 1]) {
-          int temp = arrival[j];
-          arrival[j] = arrival[j + 1];
-          arrival[j + 1] = temp;
-        }
-      }
-    }
+    arrival.sort((a, b) => b.compareTo(a));
   }
 }
