@@ -23,4 +23,16 @@ class MinHeap {
     }
     return false;
   }
+
+  void insert(int element){
+    if(size >= maxSize) {
+      return;
+    }
+    heap[size] = element;
+    int current = size;
+
+    while(heap[current] < heap[_parentIndex(current)]) {
+      
+    }
+  }
 }
