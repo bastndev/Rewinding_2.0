@@ -46,7 +46,7 @@ class MinHeap {
 
     int popped = heap[0];
     heap[0] = heap[--size];
-    _minHeapify(i: 0);
+    _minHeapify(0);
     return popped;
   }
 
