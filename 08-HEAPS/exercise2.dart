@@ -24,6 +24,3 @@ void main() {
   print(firstResult == [1, 2]);
   print(topKFrequent.topKFrequent([1, 1, 2, 3, 3, 3], 1) == [3]);
 }
-
-  // final List<String> medails = ['Gold Medal', 'Silver Medal', 'Bronze Medal'];
-    // arrival.sort((a, b) => b.compareTo(a));
