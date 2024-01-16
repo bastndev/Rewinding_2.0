@@ -49,12 +49,23 @@
     print("False");
   }
 } */
-void main() {
+/* void main() {
   int number = 0;
   number = 202;
 
   if ((number > 200) && (number < 205) && (number == 202)) {
     print("The number is 202");
+  } else {
+    print("False");
+  }
+} */
+// OR (||)
+void main() {
+  int number = 0;
+  number = 201;
+
+  if ((number > 200) && (number < 205) || (number == 202)) {
+    print("The number is TRUE");
   } else {
     print("False");
   }
