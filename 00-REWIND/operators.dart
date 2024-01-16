@@ -24,7 +24,7 @@
 } */
 
 //Unity Operators
-void main() {
+/* void main() {
   int number = 0;
 
   number = 5;
@@ -35,4 +35,17 @@ void main() {
 
   number++;
   print(number);
+}
+ */
+
+//-FIXME: Logic AND (&&) OR (||)
+void main() {
+  int number = 0;
+  number = 202;
+
+  if ((number > 200) && (number < 205)) {
+    print("The number is 202");
+  } else {
+    print("False");
+  }
 }
