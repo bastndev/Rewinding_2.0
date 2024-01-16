@@ -15,7 +15,7 @@ void main() {
 }
  */
 
-class Person {
+/* class Person {
   final String name;
   final int age;
 
@@ -26,3 +26,41 @@ void main() {
   Person person = Person('Gohit', 25);
   print("My name is ${person.name} I'm ${person.age} years old ");
 }
+ */
+
+/* class Student {
+  String name;
+  List<Course> courses;
+
+  Student(this.name, this.courses);
+
+  void enroll(Course course) {
+    courses.add(course);
+    course.students.add(this);
+  }
+}
+
+class Course {
+  String name;
+  List<Student> students;
+
+  Course(
+    this.name,
+  ) : students = [];
+}
+
+void main() {
+  var dartCourse = Course('Dart');
+  var flutterCourse = Course('Flutter');
+
+  var student = Student('Gohit', []);
+
+  student.enroll(dartCourse);
+  student.enroll(flutterCourse);
+
+  print('The student ${student.name} is enrolled in the following courses:');
+  for (var course in student.courses) {
+    print(course.name);
+  }
+}
+ */
