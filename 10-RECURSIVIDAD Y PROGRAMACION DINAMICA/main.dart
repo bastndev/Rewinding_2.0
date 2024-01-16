@@ -11,7 +11,7 @@
  */
 
 // -TODO: is so fast
-void main() {
+/* void main() {
   List<int> memo = List<int>.filled(1000, -1);
   int fibonacciMemo(int n) {
     if (n < 2) return n;
@@ -23,4 +23,26 @@ void main() {
   }
 
   print(fibonacciMemo(50));
+}
+ */
+
+// -TODO: Method Bottom Up
+
+int fibonacciBottomUp(int n) {
+  if (n < 2) return n;
+
+  int previousOfPrevious = 0;
+  int previous = 1;
+
+  for (int i = 2; i < n; i++) {
+    int current = previous + previousOfPrevious;
+    previousOfPrevious = previous;
+    previous = current;
+  }
+
+  return previous + previousOfPrevious;
+}
+
+void main() {
+  print(fibonacciBottomUp(50));
 }
