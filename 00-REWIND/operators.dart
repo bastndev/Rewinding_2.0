@@ -10,7 +10,7 @@
 } */
 
 //logical Operators == , != , <= , >=
-void main() {
+/* void main() {
   int num = 30;
   num = num + 22;
   print(num);
@@ -21,4 +21,18 @@ void main() {
   } else {
     print("Is not Cero is: $num");
   }
+} */
+
+//Unity Operators
+void main() {
+  int number = 0;
+
+  number = 5;
+  print(number);
+
+  ++number;
+  print(number);
+
+  number++;
+  print(number);
 }
