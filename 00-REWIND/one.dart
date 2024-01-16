@@ -25,7 +25,7 @@
 }
  */
 
-void main() {
+/* void main() {
   bool active = true;
 
   active = !active;
@@ -34,5 +34,18 @@ void main() {
     print("This is active");
   } else {
     print("Sorry is not active");
+  }
+}
+ */
+
+void main() {
+  bool active = true;
+
+  print(active);
+  //equivalent
+  if (!active) {
+    print("This is active");
+  } else {
+    print("Sorry is NOT active");
   }
 }
