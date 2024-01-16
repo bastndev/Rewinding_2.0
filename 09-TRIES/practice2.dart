@@ -78,5 +78,9 @@ class Hero {
 }
 
 void main() {
-  
+  final Hero hero = Hero('Zeus', 'Ray');
+
+  print("My name is $hero");
+  print("My name is ${hero.name}");
+  print("My power is ${hero.power}");
 }
