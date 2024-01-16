@@ -39,11 +39,21 @@
  */
 
 //-FIXME: Logic AND (&&) OR (||)
-void main() {
+/* void main() {
   int number = 0;
   number = 202;
 
   if ((number > 200) && (number < 205)) {
+    print("The number is 202");
+  } else {
+    print("False");
+  }
+} */
+void main() {
+  int number = 0;
+  number = 202;
+
+  if ((number > 200) && (number < 205) && (number == 202)) {
     print("The number is 202");
   } else {
     print("False");
