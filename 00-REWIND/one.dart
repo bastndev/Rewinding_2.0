@@ -51,7 +51,7 @@
 }
  */
 
-void main() {
+/* void main() {
   int number = 3;
 
   if (number % 2 == 0) {
@@ -59,4 +59,13 @@ void main() {
   } else {
     print("Is not part");
   }
+}
+ */
+
+void main() {
+  bool valor1 = true;
+  bool valor2 = false;
+  bool valor3 = true;
+  print(valor1 && valor2 && valor3);
+  print(valor1 || valor2 || valor3);
 }
