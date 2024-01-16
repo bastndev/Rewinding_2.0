@@ -64,3 +64,19 @@ void main() {
   }
 }
  */
+
+class Hero {
+  final String name;
+  final String power;
+
+  Hero(this.name, this.power);
+
+  @override
+  String toString() {
+    return '$name - $power';
+  }
+}
+
+void main() {
+  
+}
