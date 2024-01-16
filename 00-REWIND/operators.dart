@@ -60,7 +60,7 @@
   }
 } */
 // OR (||)
-void main() {
+/* void main() {
   int number = 0;
   number = 201;
 
@@ -69,4 +69,22 @@ void main() {
   } else {
     print("False");
   }
+} */
+
+//-FIXME: Bitwise OPerator
+void main() {
+  var a = 5;
+  var b = 3;
+
+  //8 4 2 1
+  //0 1 0 1
+  //0 0 1 1
+//-- --- --
+  //0 1 1 1
+
+  var result = (a & b);
+  print(result);
+
+  result = (a | b);
+  print(result);
 }
