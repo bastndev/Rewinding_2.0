@@ -24,7 +24,7 @@ void main() {
   List<int> set = [1, 2, 3];
   List<List<int>> result = setSubsets.subsets(set);
 
-  for (List<int> subset in result) {
-    print("$subset");
+  for (List<int> subResult in result) {
+    print("$subResult");
   }
 }
