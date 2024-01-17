@@ -1,4 +1,4 @@
-class SetSubset {
+class SetSubsets {
   List<List<int>> subsets(List<int> set) {
     List<List<int>> result = [];
     result.add([]);
@@ -19,17 +19,10 @@ class SetSubset {
 }
 
 void main() {
-  SetSubset setSubsets = SetSubset();
+  SetSubsets setSubsets = SetSubsets();
 
   List<int> set = [1, 2, 3];
   List<List<int>> result = setSubsets.subsets(set);
-  print(result.contains([1, 2, 3]));
-  print(result.contains([1, 2]));
-  print(result.contains([1, 3]));
-  print(result.contains([2, 3]));
-  print(result.contains([1]));
-  print(result.contains([2]));
-  print(result.contains([3]));
-  print(result.contains([]));
-  print(result.length == 8);
+
+  print("\n$result\n");
 }
