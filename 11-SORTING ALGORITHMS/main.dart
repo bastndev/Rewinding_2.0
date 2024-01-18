@@ -20,7 +20,6 @@ void main() {
   print("$c1  $c2"); //commend this
 } */
 
-
 class MyClass {
   static void myStaticMethod() {
     print("This is a static method.");
@@ -28,5 +27,5 @@ class MyClass {
 }
 
 void main() {
-  MyClass.myStaticMethod(); // Llamada a un método estático sin instanciar la clase
+  MyClass.myStaticMethod();
 }
