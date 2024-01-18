@@ -1,4 +1,4 @@
-class SearchUtils {
+/* class SearchUtils {
   static void swap(List<int> array, int i, int j) {
     int temp = array[i];
     array[i] = array[j];
@@ -22,5 +22,12 @@ void main() {
   List<int> list = [3, 5, 1, 2, 4];
 
   BubbleSort.sort(list);
+  print(list);
+} */
+
+void main() {
+  List<int> list = [3, 5, 1, 2, 4];
+
+  list.sort();
   print(list);
 }
