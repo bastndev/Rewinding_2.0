@@ -23,4 +23,7 @@ void greet(String name) {
 
 void main() {
   greet('Juan');
+  greet('Maria');
+  greet('Lucas');
+  greet('Sara');
 }
