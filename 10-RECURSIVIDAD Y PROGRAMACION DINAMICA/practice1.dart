@@ -7,11 +7,20 @@ void main() {
 }
  */
 
-void car(String color) {
+/* void car(String color) {
   print("My car is of color $color");
 }
 
 void main() {
   car('red');
   car('Blue');
+}
+ */
+
+void greet(String name) {
+  print("Hello my name is $name");
+}
+
+void main() {
+  greet('Juan');
 }
