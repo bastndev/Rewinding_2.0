@@ -17,3 +17,17 @@ class BinarySearchInteractive {
     return -1;
   }
 }
+
+void main() {
+  List<int> list = [1, 3, 4, 7, 8, 9, 12, 15, 24, 35, 95];
+
+  final BinarySearchInteractive array = BinarySearchInteractive();
+  final int search = 15;
+  final result = array.binarySearch(list, search);
+
+  if (result != -1) {
+    print(true);
+  } else {
+    print(false);
+  }
+}
