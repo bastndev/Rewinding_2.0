@@ -26,8 +26,8 @@ void main() {
   final result = array.binarySearch(list, search);
 
   if (result != -1) {
-    print(true);
+    print("YES your number exists");
   } else {
-    print(false);
+    print("NO your number not exists");
   }
 }
