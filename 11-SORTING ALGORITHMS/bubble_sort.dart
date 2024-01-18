@@ -17,3 +17,10 @@ class BubbleSort {
     }
   }
 }
+
+void main() {
+  List<int> list = [3, 5, 1, 2, 4];
+
+  BubbleSort.sort(list);
+  print(list);
+}
