@@ -1,3 +1,5 @@
+// -FIXME:O(n*log n)
+
 void quickSort(List<int> list, int low, int high) {
   if (low < high) {
     int pi = partition(list, low, high);
@@ -24,7 +26,7 @@ int partition(List<int> list, int low, int high) {
 }
 
 void main() {
-  List<int> list = [3,5,1,7,6,2,4];
+  List<int> list = [3, 5, 1, 7, 6, 2, 4];
   int n = list.length;
   quickSort(list, 0, n - 1);
   print("Lista ordenada: $list");
