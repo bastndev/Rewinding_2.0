@@ -1,6 +1,12 @@
-bool getBit(int num, int index) {
+/* bool getBit(int num, int index) {
   int mask = (1 << index);
   return ((num & mask) != 0);
+}
+ */
+
+bool getBit(int num, int index) {
+  int mask = (1 << index);
+  return ((num | mask) == num);
 }
 
 void main() {
