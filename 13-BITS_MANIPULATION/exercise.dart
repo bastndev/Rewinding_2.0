@@ -9,3 +9,13 @@ class NumberOfOneBits {
     return bitCount;
   }
 }
+
+void main() {
+  NumberOfOneBits n = NumberOfOneBits();
+
+  int input = 8;
+  print('Input: $input');
+  
+  int numberOfOnes = n.numberOfOneBits(input);
+  print('Number of one bits: $numberOfOnes');
+}
