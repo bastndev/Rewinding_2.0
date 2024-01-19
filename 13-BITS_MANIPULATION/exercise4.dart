@@ -8,7 +8,7 @@ class SumIntegers {
       int secondBit = _getBit(b, i);
 
       int sum = firstBit ^ secondBit ^ carry;
-      result += _updateBit(result, i, sum);
+      result = _updateBit(result, i, sum);
 
       carry = (firstBit == 1 && secondBit == 1 ||
               firstBit == 1 && carry == 1 ||
@@ -27,4 +27,15 @@ class SumIntegers {
     int clearBitMask = ~(1 << i);
     return (n & clearBitMask) | (bit << i);
   }
+}
+
+void main() {
+  SumIntegers n = SumIntegers();
+  int a = 3;
+  int b = 6;
+  print("Input: $a");
+  print("Input: $b");
+
+  final result = n.getSum(a, b);
+  print("The Output is: $result");
 }
