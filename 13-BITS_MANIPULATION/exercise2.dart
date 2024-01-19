@@ -1,4 +1,4 @@
-/* class ReverseInt {
+class ReverseInt {
   int reverseInt(int n) {
     for (int i = 0; i < 16; i++) {
       int firstBit = _getBit(n, i);
@@ -29,4 +29,3 @@ void main() {
   int result = n.reverseInt(input);
   print("Reverse output: $result");
 }
- */
