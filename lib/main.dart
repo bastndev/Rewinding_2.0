@@ -17,8 +17,16 @@ int fibonacci(int n) {
 }
  */
 
-void main(List<String> arguments) {
+/* void main(List<String> arguments) {
   print("Hello World!");
   print("Hello World!");
   print("Hello World!");
+}
+ */
+
+void main() { 
+  final age = 25;
+  final name = "Gohit";
+  print(age.runtimeType);
+  print(name.runtimeType);
 }
