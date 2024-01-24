@@ -23,10 +23,14 @@ int fibonacci(int n) {
   print("Hello World!");
 }
  */
-  final age = 25;
+/*   final age = 25;
 
 void main() { 
   final name = "Gohit";
   print(age.runtimeType);
   print(name.runtimeType);
+} */
+
+void main() { 
+  
 }
