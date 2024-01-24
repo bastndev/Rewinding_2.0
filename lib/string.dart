@@ -16,6 +16,9 @@ sdsSDA
 }
  */
 
-void main() {               
-  print("soy go");
+void main() {  
+  final four= 4;             
+  
+  final result = four.toString();
+  print("I have $result");
 }
