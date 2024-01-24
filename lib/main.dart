@@ -31,7 +31,15 @@ void main() {
   print(name.runtimeType);
 } */
 
+/* 
 void main() { 
   bool name = false;
   print("I have a name $name");
+} */
+
+void main() {
+  final String name = 'Gohit';
+  // name = 'pedro';
+
+  print(name);
 }
