@@ -23,9 +23,17 @@ sdsSDA
   print("I have $result = ${result.runtimeType}");
 } */
 
-void main() {
+/* void main() {
   final weight = 43.2124;
 
   final result = weight.toStringAsFixed(2);
   print("The result is: $result");
+}
+ */
+
+void main() {
+  final phrase = "I like pizza in the night";
+
+  final result = phrase.contains("pizza");
+  print("You result contains Pizza?: $result");
 }
