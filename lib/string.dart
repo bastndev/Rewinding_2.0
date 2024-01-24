@@ -39,9 +39,16 @@ sdsSDA
 }
  */
 
-void main() { 
+/* void main() { 
   final email = 'info@example.com';
 
   final result = email.split("@");
+  print(result);
+} */
+
+void main() { 
+  final email = 'info@example.com';
+
+  final result = email.split("@")[1];
   print(result);
 }
