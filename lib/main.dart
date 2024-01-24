@@ -23,9 +23,9 @@ int fibonacci(int n) {
   print("Hello World!");
 }
  */
+  final age = 25;
 
 void main() { 
-  final age = 25;
   final name = "Gohit";
   print(age.runtimeType);
   print(name.runtimeType);
