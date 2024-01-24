@@ -1,16 +1,21 @@
 // @command:dart.rerunLastDebugSession
-void main() {
+/* void main() {
   String one = "one";
   String two = "two";
-  String three = """
+  final three = """
   Lucas
 ssd
   Pedro 
-
+sdsSDA
   Maria'
 """;
 
   print(three);
   print(one);
   print(two);
+}
+ */
+
+void main() {               
+  print("soy go");
 }
