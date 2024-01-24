@@ -75,9 +75,16 @@ sdsSDA
   print("Your phrase start with I: $result");
 } */
 
-void main() {
+/* void main() {
   final phrase = "I like pizza in the night";
 
   final result = phrase.substring(12);
   print("Your phrase start with I: $result");
+} */
+
+void main() {
+  final email = 'info@example.com';
+
+  final result = email.substring(4 + 1, email.indexOf('.'));
+  print("Your email is: $result");
 }
