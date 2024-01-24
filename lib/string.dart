@@ -54,3 +54,9 @@ sdsSDA
 }
  */
 
+void main() {
+  final phrase = "I like pizza in the night";
+
+  final result = phrase.startsWith("I");
+  print("Your phrase start with I: $result");
+}
