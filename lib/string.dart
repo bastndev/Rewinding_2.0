@@ -54,9 +54,23 @@ sdsSDA
 }
  */
 
-void main() {
+/* void main() {
   final phrase = "I like pizza in the night";
 
   final result = phrase.startsWith("I");
+  print("Your phrase start with I: $result");
+} */
+
+/* void main() {
+  final phrase = "I like pizza in the night";
+
+  final result = phrase.lastIndexOf("t");
+  print("Your phrase start with I: $result");
+}
+ */
+void main() {
+  final phrase = "I like pizza in the night";
+
+  final result = phrase.indexOf("t");
   print("Your phrase start with I: $result");
 }
