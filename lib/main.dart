@@ -32,5 +32,6 @@ void main() {
 } */
 
 void main() { 
-  
+  bool name = false;
+  print("I have a name $name");
 }
