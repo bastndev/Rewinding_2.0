@@ -31,9 +31,17 @@ sdsSDA
 }
  */
 
-void main() {
+/* void main() {
   final phrase = "I like pizza in the night";
 
   final result = phrase.contains("pizza");
   print("You result contains Pizza?: $result");
+}
+ */
+
+void main() { 
+  final email = 'info@example.com';
+
+  final result = email.split("@");
+  print(result);
 }
