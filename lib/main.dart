@@ -37,9 +37,10 @@ void main() {
   print("I have a name $name");
 } */
 
-void main() {
+/* void main() {
   final String name = 'Gohit';
   // name = 'pedro';
 
   print(name);
 }
+ */

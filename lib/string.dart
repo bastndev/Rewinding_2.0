@@ -16,9 +16,16 @@ sdsSDA
 }
  */
 
-void main() {  
+/* void main() {  
   final four= 4;             
   
   final result = four.toString();
   print("I have $result = ${result.runtimeType}");
+} */
+
+void main() {
+  final weight = 43.2124;
+
+  final result = weight.toStringAsFixed(2);
+  print("The result is: $result");
 }
