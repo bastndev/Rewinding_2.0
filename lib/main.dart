@@ -44,3 +44,19 @@ void main() {
   print(name);
 }
  */
+
+void main() {
+  int one = 1;
+  double two = 2.2;
+  String name = "Gohit";
+  bool result = true;
+  var four = 4;
+  dynamic value = 5;
+
+  print(one.runtimeType);
+  print(two.runtimeType);
+  print(name.runtimeType);
+  print(result.runtimeType);
+  print(four.runtimeType);
+  print(value.runtimeType);
+}
