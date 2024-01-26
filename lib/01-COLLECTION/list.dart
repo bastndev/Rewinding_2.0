@@ -4,11 +4,15 @@ void main() {
 
   List listToList = [
     [10, 24],
-    [list2],
+    list2,
     [12, 546, 7]
   ];
 
   var myName = list2[0];
-
+  var size = listToList.length;
   print("my name is $myName");
+  print("The size list is $size");
+
+  final result = listToList[1][1];
+  print("Name with my friend is $result");
 }
