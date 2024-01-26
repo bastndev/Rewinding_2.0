@@ -14,5 +14,5 @@ void main() {
   print("The size list is $size");
 
   final result = listToList[1][1];
-  print("Name with my friend is $result");
+  print("Name with my friend is $result and she have ${list1[1]} years old");
 }
