@@ -30,4 +30,7 @@ void main() {
   mySecondList.add('Hello');
   print(mySecondList);
   print(mySecondList.length);
+
+  print(mySecondList.last);
+  print(mySecondList.reversed);
 }
